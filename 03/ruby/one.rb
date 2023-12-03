@@ -26,55 +26,37 @@ def partnum?(num, ay, lines)
   matrix = []
 
   xstart = numstart > 0 ? numstart - 1 : numstart
-  xfinish = numfinish < lines[ay].length ? numfinish + 1 : numfinish
+  xfinish = numfinish < lines[ay].length ? numfinish + 1 : numfinish # EXCLUSIVE
 
   ystart = ay > 0 ? ay - 1 : ay
   yfinish = ay < lines.length - 1 ? ay + 2 : ay + 1
 
-  # lets go line by line!
-  y = ystart
-  while y < yfinish
-    j = xstart
-    row = []
+  if ay > 0
+    y = ay - 1
     x = xstart
     while x < xfinish
-      row << lines[y][x]
+      return true if lines[y][x].match?(pattern)
+
       x += 1
     end
-    matrix << row
-    y += 1
   end
-  putsmatrix(matrix)
 
-  # # check first char
+  y = ay
+  x = xstart
+  return true if lines[ay][xstart].match?(pattern)
+  return true if lines[ay][xfinish - 1].match?(pattern)
 
-  # # check preceding above, inline, and below of first char
-  # return true if x > 0 && y > 0 && lines[y - 1][x - 1].match?(pattern)
-  # return true if x > 0 && lines[y][x - 1].match?(pattern)
-  # return true if x > 0 && y < lines.length - 1 && lines[y + 1][x - 1].match?(pattern)
+  if ay < lines.length - 1
+    y = ay + 1
+    x = xstart
+    while x < xfinish
+      return true if lines[y][x].match?(pattern)
 
-  # # check above and below all chars
+      x += 1
+    end
+  end
 
-  # while x < finish
-  #   return true if y > 0 && lines[y - 1][x].match?(pattern)
-  #   return true if y < lines.length - 1 && lines[y + 1][x].match(pattern)
-
-  #   x += 1
-  # end
-
-  # # check postceding above, inline, and below of last char
-
-  # return true if x < lines[y].length - 1 && y > 0 && lines[y - 1][x + 1].match?(pattern)
-  # return true if x < lines[y].length - 1 && lines[y][x + 1].match?(pattern)
-  # return true if x < lines[y].length - 1 && y < lines.length - 1 && lines[y + 1][x + 1].match?(pattern)
-
-  matrix_string = matrix.map{ |row| row.join('') }.join('')
-  valid = matrix_string.match?(pattern)
-  # binding.pry if numfinish == lines[y].length - 1 || numstart == 0
-  # binding.pry if ay == 0 || ay == lines.length - 1
-  # binding.pry if num == "169"
-
-  valid
+  false
 end
 
 sum = 0
@@ -92,3 +74,6 @@ end
 
 log_file.puts(sum)
 puts sum
+
+
+# not 550371
