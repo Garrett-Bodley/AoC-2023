@@ -52,12 +52,34 @@ char *readline(FILE *file_pointer)
     str[char_count] = current;
     char_count++;
   }
-  if (current == EOF)
+  if (char_count == 0 && current == EOF)
   {
     free(str);
     return NULL;
   }
   return str;
+}
+
+int decode_line(char *str){
+  int first = -1, last = -1;
+  for(int i = 0; str[i] != '\0'; i++){
+    char current = str[i];
+    if(current >= '0' && current <= '9')
+    {
+      int digit = current - '0';
+      if(first == -1)
+      {
+        first = digit;
+      }
+      last = digit;
+    }
+  }
+
+  if(first != -1 && last != -1){
+    return (first * 10) + last;
+  }else{
+    return -1;
+  }
 }
 
 int main()
@@ -70,18 +92,31 @@ int main()
     return 1;
   }
 
+  int sum = 0;
+  int line_num = 1;
   char *line;
   while((line = readline(file_pointer)) != NULL)
   {
-    printf("%s\n", line);
+    // printf("%s\n", line);
+    int line_sum = decode_line(line);
+    printf("%i\n", line_sum);
+    if(line_sum == -1){
+      fprintf(stderr, "Error on Line Num: %i", line_num);
+      return 1;
+    }else{
+      sum += line_sum;
+      line_num++;
+    }
     free(line);
   }
+
 
   if(ferror(file_pointer))
   {
     perror("Error while reading file! Bad!");
     return -1;
   }else{
+    printf("Answer: %i\n", sum);
     return 0;
   }
 }
