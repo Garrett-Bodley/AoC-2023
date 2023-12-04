@@ -1,0 +1,161 @@
+Card 1, Value: 128, Matches: 5 13 15 16 17 39 75 92
+Card 2, Value: 128, Matches: 5 18 25 51 59 64 75 94
+Card 3, Value: 2, Matches: 16 33
+Card 4, Value: 32, Matches: 11 18 43 68 80 96
+Card 5, Value: 4, Matches: 9 28 96
+Card 7, Value: 2, Matches: 30 59
+Card 8, Value: 8, Matches: 73 85 88 96
+Card 9, Value: 2, Matches: 77 97
+Card 10, Value: 16, Matches: 24 60 62 77 84
+Card 12, Value: 4, Matches: 3 11 30
+Card 16, Value: 64, Matches: 21 27 43 53 68 85 86
+Card 17, Value: 512, Matches: 3 10 20 38 52 55 57 67 69 96
+Card 18, Value: 1, Matches: 19
+Card 19, Value: 512, Matches: 24 34 45 51 59 60 69 74 83 93
+Card 20, Value: 512, Matches: 4 16 28 41 44 69 83 86 88 90
+Card 21, Value: 2, Matches: 8 26
+Card 22, Value: 512, Matches: 18 29 37 42 57 67 68 75 88 92
+Card 23, Value: 512, Matches: 3 10 17 23 45 53 64 68 70 75
+Card 24, Value: 1, Matches: 9
+Card 25, Value: 2, Matches: 15 92
+Card 26, Value: 256, Matches: 33 42 43 51 55 59 66 92 96
+Card 28, Value: 32, Matches: 33 57 72 79 87 99
+Card 29, Value: 2, Matches: 73 89
+Card 30, Value: 8, Matches: 4 49 57 62
+Card 31, Value: 2, Matches: 7 45
+Card 32, Value: 4, Matches: 35 79 85
+Card 33, Value: 1, Matches: 25
+Card 34, Value: 1, Matches: 11
+Card 37, Value: 512, Matches: 11 18 20 37 49 53 55 86 88 95
+Card 38, Value: 512, Matches: 6 13 38 46 47 48 52 70 82 91
+Card 39, Value: 512, Matches: 18 24 49 50 67 76 82 89 93 98
+Card 40, Value: 512, Matches: 5 15 17 26 34 51 71 87 98 99
+Card 41, Value: 512, Matches: 1 10 14 28 55 57 62 88 96 98
+Card 42, Value: 32, Matches: 34 41 44 45 69 98
+Card 43, Value: 512, Matches: 2 23 36 37 40 42 68 75 96 98
+Card 44, Value: 512, Matches: 17 28 31 44 65 66 73 80 83 84
+Card 45, Value: 16, Matches: 13 52 64 67 90
+Card 46, Value: 1, Matches: 40
+Card 47, Value: 512, Matches: 23 25 29 34 47 64 87 89 94 99
+Card 48, Value: 512, Matches: 2 23 29 37 75 76 80 82 85 91
+Card 50, Value: 1, Matches: 61
+Card 51, Value: 4, Matches: 1 65 86
+Card 52, Value: 128, Matches: 13 36 39 55 56 69 77 95
+Card 55, Value: 4, Matches: 34 83 87
+Card 56, Value: 8, Matches: 10 27 37 50
+Card 57, Value: 1, Matches: 57
+Card 58, Value: 2, Matches: 45 66
+Card 59, Value: 1, Matches: 91
+Card 61, Value: 128, Matches: 4 27 28 35 42 80 89 92
+Card 62, Value: 2, Matches: 27 57
+Card 63, Value: 512, Matches: 10 21 35 47 62 83 84 86 90 91
+Card 64, Value: 2, Matches: 66 92
+Card 65, Value: 512, Matches: 23 34 36 40 46 47 61 62 63 94
+Card 66, Value: 1, Matches: 90
+Card 67, Value: 32, Matches: 2 9 42 59 78 82
+Card 68, Value: 32, Matches: 8 9 26 58 74 87
+Card 69, Value: 2, Matches: 29 51
+Card 70, Value: 1, Matches: 67
+Card 72, Value: 2, Matches: 28 39
+Card 73, Value: 1, Matches: 84
+Card 76, Value: 256, Matches: 4 7 26 34 36 50 70 83 88
+Card 77, Value: 128, Matches: 15 24 26 31 39 45 75 87
+Card 78, Value: 16, Matches: 15 21 62 91 95
+Card 79, Value: 2, Matches: 67 72
+Card 80, Value: 64, Matches: 18 30 31 36 51 83 90
+Card 81, Value: 8, Matches: 30 63 72 87
+Card 82, Value: 4, Matches: 22 67 89
+Card 83, Value: 512, Matches: 4 8 23 32 35 36 49 53 89 92
+Card 85, Value: 512, Matches: 3 8 19 31 57 59 66 82 87 89
+Card 86, Value: 8, Matches: 13 22 51 54
+Card 87, Value: 256, Matches: 1 8 27 75 76 77 88 91 99
+Card 88, Value: 64, Matches: 2 19 23 48 50 73 82
+Card 89, Value: 2, Matches: 35 45
+Card 90, Value: 32, Matches: 2 4 13 31 59 87
+Card 91, Value: 32, Matches: 17 25 28 49 56 85
+Card 92, Value: 4, Matches: 21 51 54
+Card 93, Value: 2, Matches: 63 86
+Card 94, Value: 2, Matches: 52 59
+Card 95, Value: 1, Matches: 58
+Card 96, Value: 1, Matches: 3
+Card 98, Value: 32, Matches: 2 5 25 65 84 92
+Card 99, Value: 512, Matches: 2 15 26 36 49 57 59 78 81 90
+Card 100, Value: 512, Matches: 2 9 18 19 41 48 57 62 73 82
+Card 101, Value: 4, Matches: 50 60 71
+Card 102, Value: 512, Matches: 3 17 33 40 47 57 64 78 79 80
+Card 103, Value: 512, Matches: 2 8 22 46 50 60 79 90 93 99
+Card 104, Value: 32, Matches: 1 70 90 91 93 98
+Card 105, Value: 128, Matches: 7 18 23 35 41 76 86 98
+Card 106, Value: 32, Matches: 3 34 66 69 71 76
+Card 107, Value: 512, Matches: 6 7 18 31 36 42 45 49 79 97
+Card 108, Value: 512, Matches: 16 23 26 41 48 51 59 65 80 89
+Card 109, Value: 512, Matches: 16 17 22 48 59 63 67 70 89 93
+Card 110, Value: 8, Matches: 37 89 96 97
+Card 111, Value: 256, Matches: 12 27 36 39 48 61 80 81 87
+Card 112, Value: 8, Matches: 20 22 26 75
+Card 113, Value: 64, Matches: 15 27 32 34 60 65 87
+Card 114, Value: 4, Matches: 25 46 51
+Card 115, Value: 1, Matches: 45
+Card 116, Value: 4, Matches: 13 38 59
+Card 117, Value: 4, Matches: 43 44 54
+Card 118, Value: 2, Matches: 40 47
+Card 119, Value: 1, Matches: 28
+Card 121, Value: 2, Matches: 5 62
+Card 122, Value: 512, Matches: 14 37 40 47 62 69 73 80 87 91
+Card 123, Value: 8, Matches: 8 69 72 96
+Card 124, Value: 1, Matches: 93
+Card 125, Value: 8, Matches: 58 76 78 87
+Card 126, Value: 64, Matches: 7 26 30 35 42 63 75
+Card 128, Value: 16, Matches: 22 23 52 95 99
+Card 129, Value: 32, Matches: 23 38 46 58 59 68
+Card 132, Value: 2, Matches: 71 80
+Card 133, Value: 2, Matches: 9 35
+Card 134, Value: 1, Matches: 88
+Card 137, Value: 16, Matches: 7 60 68 93 98
+Card 138, Value: 512, Matches: 7 17 31 45 60 65 76 77 84 93
+Card 139, Value: 16, Matches: 16 33 50 80 93
+Card 140, Value: 8, Matches: 6 80 85 87
+Card 141, Value: 128, Matches: 31 42 43 52 60 61 72 99
+Card 142, Value: 256, Matches: 5 15 28 37 50 65 72 94 96
+Card 143, Value: 64, Matches: 27 41 49 55 56 57 94
+Card 144, Value: 2, Matches: 78 97
+Card 145, Value: 2, Matches: 36 62
+Card 147, Value: 1, Matches: 19
+Card 152, Value: 32, Matches: 1 13 40 67 79 80
+Card 153, Value: 2, Matches: 35 94
+Card 154, Value: 64, Matches: 27 31 45 54 75 92 93
+Card 155, Value: 512, Matches: 3 10 17 37 40 60 72 75 95 96
+Card 156, Value: 1, Matches: 82
+Card 158, Value: 512, Matches: 8 20 27 29 32 61 64 66 75 86
+Card 159, Value: 32, Matches: 10 15 35 39 64 84
+Card 160, Value: 64, Matches: 7 47 48 73 86 91 93
+Card 161, Value: 4, Matches: 28 34 97
+Card 162, Value: 2, Matches: 20 69
+Card 163, Value: 16, Matches: 8 30 61 67 81
+Card 165, Value: 4, Matches: 31 35 37
+Card 166, Value: 2, Matches: 29 93
+Card 167, Value: 1, Matches: 51
+Card 169, Value: 1, Matches: 39
+Card 170, Value: 512, Matches: 11 24 33 40 50 60 78 84 91 94
+Card 171, Value: 512, Matches: 3 4 11 28 38 43 45 48 58 74
+Card 172, Value: 128, Matches: 21 25 29 32 36 55 73 76
+Card 173, Value: 64, Matches: 2 13 21 38 51 82 98
+Card 174, Value: 512, Matches: 6 26 34 44 56 58 62 63 71 94
+Card 176, Value: 512, Matches: 12 15 22 28 44 55 56 62 72 84
+Card 177, Value: 512, Matches: 5 28 30 34 38 51 53 82 85 93
+Card 178, Value: 256, Matches: 14 32 63 65 66 84 85 86 89
+Card 179, Value: 128, Matches: 2 10 15 16 18 22 29 55
+Card 180, Value: 32, Matches: 13 32 45 75 79 95
+Card 181, Value: 8, Matches: 27 47 78 85
+Card 182, Value: 2, Matches: 29 84
+Card 183, Value: 2, Matches: 47 49
+Card 184, Value: 16, Matches: 10 39 42 91 96
+Card 185, Value: 16, Matches: 24 27 48 52 62
+Card 186, Value: 64, Matches: 20 25 34 45 55 89 90
+Card 187, Value: 2, Matches: 68 75
+Card 188, Value: 8, Matches: 10 13 27 45
+Card 189, Value: 2, Matches: 81 95
+Card 190, Value: 1, Matches: 27
+Card 191, Value: 1, Matches: 17
+Card 192, Value: 1, Matches: 64
+21558
