@@ -66,13 +66,13 @@ def check_neighbors(sym, matrix, numbers) # rubocop:disable Metrics/AbcSize
           left_num = numbers.select do |num|
             num.val == left && num.y == sym.y && (num.x..num.x + num.length - 1).cover?(sym.x - 1)
           end
-          neighbors << left_num
+          neighbors += left_num
         end
         if right.is_a?(Integer)
           right_num = numbers.select do |num|
             num.val == right && num.y == sym.y && (num.x..num.x + num.length - 1).cover?(sym.x + 1)
           end
-          neighbors << right_num
+          neighbors += right_num
         end
       else
         val = matrix[sym.y + y_offset][sym.x + x_offset]
@@ -96,7 +96,7 @@ added = []
 
 symbols.each do |sym|
   neighbors = check_neighbors(sym, matrix, numbers)
-  neighbors.flatten.each do |neighbor|
+  neighbors.each do |neighbor|
     parts << neighbor && added << neighbor unless added.any? {|num| neighbor.val == num.val && neighbor.x == num.x && neighbor.y == num.y }
   end
 end
@@ -104,4 +104,7 @@ end
 total = parts.reduce(0) { |accum, num| accum + num.val }
 
 puts total
+
+# expect 550064
+
 # rubocop:enable Style/RegexpLiteral, Metrics/BlockNesting
