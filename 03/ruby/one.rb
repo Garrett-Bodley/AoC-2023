@@ -14,47 +14,56 @@ log_file = File.open(log_path, File::CREAT | File::RDWR | File::TRUNC)
 
 lines = input_file.readlines(chomp: true)
 
-def putsmatrix(matrix)
-  matrix.each { |row| puts row.join('') }
-end
-
-def partnum?(num, ay, lines)
+def partnum?(num, y, lines)
   pattern = /[!@\#$%^&*()_+={}\[\]:;"'<>,?\/\-~`|\\]/
-  numstart = lines[ay].match(num).begin(0)
-  numfinish = numstart + num.length
+  begin
+    start = lines[y].match(num).begin(0)
+  rescue
+    binding.pry
+  end
+  finish = start + num.length - 1
 
-  matrix = []
-
-  xstart = numstart > 0 ? numstart - 1 : numstart
-  xfinish = numfinish < lines[ay].length ? numfinish + 1 : numfinish # EXCLUSIVE
-
-  ystart = ay > 0 ? ay - 1 : ay
-  yfinish = ay < lines.length - 1 ? ay + 2 : ay + 1
-
-  if ay > 0
-    y = ay - 1
-    x = xstart
-    while x < xfinish
-      return true if lines[y][x].match?(pattern)
-
-      x += 1
+  (start..finish).each do |x|
+    if y > 0
+      return true if x > 0 && lines[y - 1][x - 1].match?(pattern)
+      return true if lines[y - 1][x].match?(pattern)
+      return true if x < lines[y].length - 1 && lines[y - 1][x + 1].match?(pattern)
     end
+
+    return true if x > 0 && lines[y][x - 1].match?(pattern)
+    return true if x < lines[y].length - 1 && lines[y][x + 1].match?(pattern)
+
+    if y < lines.length - 1
+      return true if x > 0 && lines[y + 1][x - 1].match?(pattern)
+      return true if lines[y + 1][x].match?(pattern)
+      return true if x < lines[y].length - 1 && lines[y + 1][x + 1].match?(pattern)
+    end
+
   end
 
-  y = ay
-  x = xstart
-  return true if lines[ay][xstart].match?(pattern)
-  return true if lines[ay][xfinish - 1].match?(pattern)
+  # x = start
 
-  if ay < lines.length - 1
-    y = ay + 1
-    x = xstart
-    while x < xfinish
-      return true if lines[y][x].match?(pattern)
+  # # check first char
 
-      x += 1
-    end
-  end
+  # # check preceding above, inline, and below of first char
+  # return true if x > 0 && y > 0 && lines[y - 1][x - 1].match?(pattern)
+  # return true if x > 0 && lines[y][x - 1].match?(pattern)
+  # return true if x > 0 && y < lines.length - 1 && lines[y + 1][x - 1].match?(pattern)
+
+  # # check above and below all chars
+
+  # while x < finish
+  #   return true if y > 0 && lines[y - 1][x].match?(pattern)
+  #   return true if y < lines.length - 1 && lines[y + 1][x].match?(pattern)
+
+  #   x += 1
+  # end
+
+  # # check postceding above, inline, and below of last char
+
+  # return true if x < lines[y].length - 1 && y > 0 && lines[y - 1][x + 1].match?(pattern)
+  # return true if x < lines[y].length - 1 && lines[y][x + 1].match?(pattern)
+  # return true if x < lines[y].length - 1 && y < lines.length - 1 && lines[y + 1][x + 1].match?(pattern)
 
   false
 end
@@ -64,16 +73,18 @@ lines.each_with_index do |line, linenum|
   # looking for numbers that are adjacent to other numbers
   # first lets find series of digits
   nums = line.scan(/\d+/)
-  partnums = nums.select { |num| partnum?(num, linenum, lines) }
-  rejected = nums.reject do |num|
-    partnum?(num, linenum, lines)
+  # binding.pry
+  partnums = nums.select do |num|
+    valid = partnum?(num, linenum, lines)
+    line.sub!(num, '.' * num.length)
+    valid
   end
+  # rejected = nums.reject { |num| partnum?(num, linenum, lines)}
   partnums.each{ |num| sum += num.to_i }
-  log_file.puts "#{linenum}: #{rejected.join(' ')}" if rejected.count > 0
+  # log_file.puts "#{linenum}: #{rejected.join(' ')}"
 end
 
 log_file.puts(sum)
 puts sum
 
-
-# not 550371
+# expect 550064
