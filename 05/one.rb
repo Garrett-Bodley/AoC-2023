@@ -4,8 +4,8 @@ require 'pry-nav'
 require 'pathname'
 
 
-input_path = Pathname.new(File.expand_path('./input.txt'))
-log_path = input_path.parent.join('rlog1.txt')
+input_path = Pathname.new(File.expand_path('./test.txt'))
+log_path = input_path.parent.join('test_log.txt')
 
 input_file = File.open(input_path, File::RDONLY)
 log_file = File.open(log_path, File::CREAT | File::RDWR | File::TRUNC)
@@ -54,6 +54,8 @@ class Map
   end
 end
 
+binding.pry
+
 maps = []
 
 chunks[1..].each do |chunk|
@@ -65,7 +67,6 @@ chunks[1..].each do |chunk|
   end
 end
 
-
 # seed_to_soil = maps.find { |map| map.source_type == 'seed' && map.dest_type == 'soil' }
 # soil_to_fertilizer = maps.find { |map| map.source_type == 'soil' && map.dest_type == 'fertilizer' }
 # fertilizer_to_water = maps.find { |map| map.source_type == 'fertilizer' && map.dest_type == 'water' }
@@ -75,8 +76,22 @@ end
 # humidity_to_location = maps.find { |map| map.source_type == 'humidity' && map.dest_type == 'location' }
 
 def get_location(seednum, maps)
-  maps.reduce(seednum) { |memo, map| map.lookup(memo) }
+  maps.reduce(seednum) do |memo, map|
+    map.lookup(memo)
+  end
 end
+
+seed_map = {}
+
+seeds.each do |seed|
+  seed_map[seed] = get_location(seed, maps)
+end
+
+seed_map.each do |key, val|
+  log_file.puts "seed: #{key}, soil: #{val}"
+end
+
+
 
 puts(seeds.min { |seed| get_location(seed, maps) })
 
