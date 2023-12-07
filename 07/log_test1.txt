@@ -1,0 +1,5 @@
+Cards: 32T3K, Bid: 765, Strength: 2
+Cards: KTJJT, Bid: 220, Strength: 3
+Cards: KK677, Bid: 28, Strength: 3
+Cards: T55J5, Bid: 684, Strength: 4
+Cards: QQQJA, Bid: 483, Strength: 4
