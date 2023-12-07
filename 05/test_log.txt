@@ -1,4 +1,0 @@
-seed: 79, soil: 78
-seed: 14, soil: 32
-seed: 55, soil: 43
-seed: 13, soil: 31
