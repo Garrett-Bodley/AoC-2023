@@ -65,26 +65,48 @@ lines.each do |line|
   node.right = rnode
 end
 
+def has_cycle(node, visited = {}, length = 0)
+  return [false, 0] if node.nil?
+  return [true, length] if visited[node]
+
+  # binding.pry if node.name == 'd'
+  visited[node] = true
+  l = has_cycle(node.left, visited, length + 1)
+  r = has_cycle(node.right, visited, length + 1)
+  cycle = [l, r].select { |c| c[0] == true }[0]
+
+
+  if cycle.nil?
+    [false, 0]
+  else
+    cycle[2] = node.name if cycle[2].nil?
+    cycle
+  end
+end
+
+cycles = Node.ghost_heads.map { |node| [node.name, has_cycle(node)] }
+# binding.pry
+
 ghost_heads = Node.ghost_heads
-binding.pry
+# binding.pry
 steps = 0
 
-until ghost_heads.all? { |node| node.name[-1] == 'Z' }
-  directions.each do |direction|
-    puts steps
-    ghost_heads.map! do |head|
-      case direction
-      when 'L'
-        head.left
-      when 'R'
-        head.right
-      end
-    end
+cycle_lengths = cycles.map { |cycle| cycle[1][1] }
 
-    steps += 1
-  end
+def gcd(a, b)
+  return a if b.zero?
+
+  gcd(b, a % b)
+end
+
+def lcm(a, b)
+  (a * b) / gcd(a, b)
+end
+
+steps = cycle_lengths.reduce(directions.length) do |accum, l|
+  lcm(accum, l)
 end
 
 puts steps
 
-# expect 11567
+# 198134640 too low!
