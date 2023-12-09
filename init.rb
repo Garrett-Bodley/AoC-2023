@@ -1,0 +1,64 @@
+# frozen_string_literal: true
+
+require 'pathname'
+require 'pry-nav'
+
+FileExists = Class.new(StandardError)
+
+arg = ARGV.shift
+raise ArgumentError, 'Expects ruby init.rb <dirnum>' if arg.nil?
+
+dirname = arg.rjust(2, '0')
+
+unless Dir.exist?(dirname)
+  Dir.mkdir(dirname)
+  puts "#{dirname}/"
+end
+
+txtfiles = ['test.txt', 'input.txt']
+
+txtfiles.each do |name|
+  path = File.join(dirname, name)
+
+  begin
+    File.open(path, File::CREAT | File::EXCL)
+  rescue Errno::EEXIST
+    raise FileExists
+  end
+
+  puts path
+end
+
+rbfiles = ['one.rb', 'two.rb']
+
+rbfiles.each do |name|
+  begin
+    created = File.open(File.join(dirname, name), File::CREAT | File::RDWR | File::EXCL)
+  rescue Errno::EEXIST
+    raise FileExists
+  end
+
+  puts created.path
+
+  text = <<~CODE
+  # frozen_string_literal: true
+
+  require 'pathname'
+  require 'pry-nav'
+
+  arg = ARGV.shift
+
+  case arg
+  when /input|input.txt/
+    FILE_PATH = Pathname.new(File.expand_path('input.txt'))
+  when /test|test.txt/
+    FILE_PATH = Pathname.new(File.expand_path('test.txt'))
+  else
+    raise ArgumentError, "Expects 'input' or 'test' as command line argument"
+  end
+
+  lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true).map { |line| line.split(/\s+/).map(&:to_i) }
+  CODE
+
+  created.puts text
+end
