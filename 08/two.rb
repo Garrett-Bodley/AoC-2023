@@ -79,17 +79,95 @@ def has_cycle(node, visited = {}, length = 0)
   if cycle.nil?
     [false, 0]
   else
-    cycle[2] = node.name if cycle[2].nil?
+    if cycle[2].nil?
+      cycle[2] = node.name
+      cycle[3] = l[0] == true ? 'left' : 'right'
+      cycle[4] = l[0] == true ? node.left.name : node.right.name
+    end
     cycle
   end
 end
 
-cycles = Node.ghost_heads.map { |node| [node.name, has_cycle(node)] }
-# binding.pry
+def cycle_log(node, directions, visited)
+  steps = 0
+  visited = {}
+  loop do
+    (0...directions.length).each do |i|
+    end
+  end
+end
 
-ghost_heads = Node.ghost_heads
-# binding.pry
-steps = 0
+cycles = Node.ghost_heads.map { |node| [node.name, has_cycle(node)] }
+
+def find_lead_in(head, start, directions)
+  count = 0
+  loop do
+    directions.each do |dir|
+      return count if head == start
+
+      case dir
+      when 'L'
+        head = head.left
+      when 'R'
+        head = head.right
+      end
+      count += 1
+    end
+  end
+end
+
+# cycles:
+# [HEAD, [TRUE, LENGTH, LAST, DIRECTION_TO_START, START, LEAD_IN_FROM_HEAD_TO_START, DISTANCE_HEAD_TO_Z]]
+
+cycles.each do |cycle|
+  head = cycle[0]
+  start = cycle[1][4]
+  lead_in = find_lead_in(Node.lookup[head], Node.lookup[start], directions)
+  cycle[1].push lead_in
+end
+
+def distance_head_to_z(node, directions)
+  count = 0
+  loop do
+    directions.each do |dir|
+      return count if node.name[-1] == 'Z'
+      case dir
+      when 'L'
+        node = node.left
+      when 'R'
+        node = node.right
+      end
+      count += 1
+    end
+  end
+end
+
+cycles.each do |cycle|
+  head = cycle[0]
+  cycle[1].push distance_head_to_z(Node.lookup[head], directions)
+end
+
+def dir_cycle_length(node, directions)
+  visited = {}
+  count = 0
+  loop do
+    directions.each_with_index do |dir, i|
+      if visited[node]
+        return count - visited[node][:count] if visited[node][:dir_i] == i
+      else
+        visited[node] = { count: count, dir_i: i }
+      end
+      node = dir == 'L' ? node.left : node.right
+      count += 1
+    end
+  end
+end
+
+dirlens = cycles.each do |cycle|
+  head = Node.lookup[cycle[0]]
+  cycle[1].push dir_cycle_length(head, directions)
+end
+binding.pry
 
 cycle_lengths = cycles.map { |cycle| cycle[1][1] }
 
@@ -103,10 +181,14 @@ def lcm(a, b)
   (a * b) / gcd(a, b)
 end
 
-steps = cycle_lengths.reduce(directions.length) do |accum, l|
-  lcm(accum, l)
+steps = cycles.reduce(directions.length) do |accum, cycle|
+  dir_cycle_length = cycle[1][-1]
+  lcm(accum, dir_cycle_length)
 end
 
 puts steps
 
 # 198134640 too low!
+# 324371682847328190320400 too high!
+
+# expects 9858474970153
