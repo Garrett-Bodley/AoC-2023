@@ -57,7 +57,7 @@ rbfiles.each do |name|
     raise ArgumentError, "Expects 'input' or 'test' as command line argument"
   end
 
-  lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true).map { |line| line.split(/\s+/).map(&:to_i) }
+  lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true)
   CODE
 
   created.puts text
