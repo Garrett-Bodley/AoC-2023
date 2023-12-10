@@ -23,8 +23,8 @@ lines.each do |line|
   line.unshift '.'
   line.push '.'
 end
-lines.unshift(Array.new(lines.length, '.'))
-lines.push(Array.new(lines.length, '.'))
+lines.unshift(Array.new(lines[0].length, '.'))
+lines.push(Array.new(lines[0].length, '.'))
 
 starty = lines.index { |l| l.any? { |c| c == 'S' } }
 startx = lines[starty].index { |c| c == 'S' }
