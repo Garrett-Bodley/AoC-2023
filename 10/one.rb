@@ -29,7 +29,7 @@ lines.push(Array.new(lines.length, '.'))
 starty = lines.index { |l| l.any? { |c| c == 'S' } }
 startx = lines[starty].index { |c| c == 'S' }
 
-log_matrix = lines.map { |line| Array.new(line.length, ' ')}
+log_matrix = lines.map { |line| Array.new(line.length, ' ') }
 
 # search neighbors to see if there are nearby pipes
 #   what are the valid directions based on the current pipe piece?
@@ -66,7 +66,6 @@ class Node
     'S' => %w[N S E W]
   }
 
-
   def initialize(x, y, shape, to_prev)
     @x = x
     @y = y
@@ -95,10 +94,6 @@ class Node
   def self.accessible?(shape, direction)
     @@shape_directions[shape].include?(direction)
   end
-
-  # def self.flip_dir(dir)
-  #   @@flip_dir[dir]
-  # end
 end
 steps = [[Node.new(startx, starty, 'S', nil)]]
 log_matrix[starty][startx] = 'S'
@@ -108,17 +103,16 @@ catch :break_cycle do
     nodes = steps.last
     next_step = []
     nodes.each do |node|
-      neighbors = node.neighbors.filter do |x, y, to_prev|
+      node.neighbors.each do |x, y, to_prev|
         shape = lines[y][x]
-        shape.match?(/[|\-LJ7FS]/) && Node.accessible?(shape, to_prev)
-      end
-      neighbors.each do |x, y, to_prev|
+        next unless shape.match?(/[|\-LJ7FS]/) && Node.accessible?(shape, to_prev)
+
         lookup_key = "#{x},#{y}"
         unless Node.lookup[lookup_key].nil?
           puts steps.length
           throw :break_cycle
         end
-        shape = lines[y][x]
+
         log_matrix[y][x] = shape
         next_step << Node.new(x, y, shape, to_prev)
       end
@@ -131,3 +125,5 @@ log_matrix.each { |line| log_file.puts line.join('') }
 
 # 4100 too low!
 # expects 6640
+
+# rubocop:enable Style/ClassVars
