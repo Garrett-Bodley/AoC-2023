@@ -40,7 +40,7 @@ log_matrix = lines.map { |line| Array.new(line.length, ' ')}
 
 # Represents a node in the pipe matrix
 class Node
-  attr_accessor :x, :y
+  attr_accessor :x, :y, :shape, :to_prev
 
   @@all = []
   @@lookup = {}
@@ -67,23 +67,20 @@ class Node
   }
 
 
-  def initialize(x, y, shape)
+  def initialize(x, y, shape, to_prev)
     @x = x
     @y = y
     @shape = shape
-    @@lookup["#{shape}#{x}#{y}"] = self
+    @to_prev = to_prev
+    @@lookup["#{x},#{y}"] = self
     @@all << self
   end
 
-  def neighbors(prev_dir = nil)
-    directions = @@shape_directions[@shape].reject { |dir| dir == prev_dir }
-    offsets = directions.map do |dir|
+  def neighbors
+    directions = @@shape_directions[@shape].reject { |dir| dir == @to_prev }
+    directions.map do |dir|
       x_offset, y_offset = @@dir_offsets[dir]
-      [@x + x_offset, @y + y_offset]
-    end
-
-    offsets.map.with_index do |offset, i|
-      [offset, directions[i]]
+      [@x + x_offset, @y + y_offset, @@flip_dir[dir]]
     end
   end
 
@@ -99,44 +96,38 @@ class Node
     @@shape_directions[shape].include?(direction)
   end
 
-  def self.flip_dir(dir)
-    @@flip_dir[dir]
-  end
+  # def self.flip_dir(dir)
+  #   @@flip_dir[dir]
+  # end
 end
-nodes = [[Node.new(startx, starty, 'S')]]
-steps = 1
-
+steps = [[Node.new(startx, starty, 'S', nil)]]
 log_matrix[starty][startx] = 'S'
 
-# [node, prevdir]
 catch :break_cycle do
   loop do
-    new_nodes = []
-    nodes.each do |node, prev_dir|
-      neighbors = node.neighbors(prev_dir)
-
-      neighbor_nodes = neighbors.map do |(x, y), dir|
+    nodes = steps.last
+    next_step = []
+    nodes.each do |node|
+      neighbors = node.neighbors.filter do |x, y, to_prev|
         shape = lines[y][x]
-        next unless shape.match?(/[|\-LJ7FS]/)
-        next unless Node.accessible?(shape, Node.flip_dir(dir))
-
-        lookup_string = "#{shape}#{x}#{y}"
-
-        unless Node.lookup[lookup_string].nil?
-          puts steps
+        shape.match?(/[|\-LJ7FS]/) && Node.accessible?(shape, to_prev)
+      end
+      neighbors.each do |x, y, to_prev|
+        lookup_key = "#{x},#{y}"
+        unless Node.lookup[lookup_key].nil?
+          puts steps.length
           throw :break_cycle
         end
+        shape = lines[y][x]
         log_matrix[y][x] = shape
-        [Node.new(x, y, shape), Node.flip_dir(dir)]
-      end.compact
-      new_nodes += neighbor_nodes
+        next_step << Node.new(x, y, shape, to_prev)
+      end
     end
-    nodes = new_nodes
-    puts steps
-    steps += 1
+    steps << next_step
   end
 end
 
 log_matrix.each { |line| log_file.puts line.join('') }
 
 # 4100 too low!
+# expects 6640
