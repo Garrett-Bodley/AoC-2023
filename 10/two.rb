@@ -123,29 +123,71 @@ log_matrix.each { |line| log_file.puts line.join('') }
 x_scan_matrix = lines.map { |line| Array.new(line.length, false) }
 y_scan_matrix = lines.map { |line| Array.new(line.length, false) }
 
-x_scan_matrix.map!.with_index do |line, y|
-  pipes_seen = 0
-  line.map.with_index do |_, x|
-    if Node.lookup["#{x},#{y}"].nil?
-      (pipes_seen % 2).zero? ? false : true
-    else
-      pipes_seen += 1
-      false
+# x_scan_matrix.map!.with_index do |line, y|
+#   borders_crossed = 0
+#   prev = false
+#   line.map.with_index do |_, x|
+#     if Node.lookup["#{x},#{y}"].nil?
+#       borders_crossed += 1 if prev == true
+#       prev = false
+#       (borders_crossed % 2).zero? ? false : true
+#     else
+#       prev = true
+#       false
+#     end
+#   end
+# end
+#
+
+(0...x_scan_matrix.length).each do |y|
+  line = x_scan_matrix[y]
+  prev_border = false
+  start = 0
+  finish = 0
+  (0...line.length).each do |x|
+    next if Node.lookup["#{x},#{y}"].nil? && prev_border == false
+
+    if !Node.lookup["#{x},#{y}"].nil? # if HAS LOOP PIPE
+      prev_border = true
+      x += 1 until Node.lookup["#{x},#{y}"].nil?
+      start = x
+      x += 1 while Node.lookup["#{x},#{y}"].nil? && x < line.length
+      next if x >= line.length
+
+      (start...x).each { |fill_x| line[fill_x] = true }
+      x -= 1
     end
   end
 end
 
+
 (0...y_scan_matrix[0].length).each do |x|
-  pipes_seen = 0
+
+  prev_border = false
   (0...y_scan_matrix.length).each do |y|
-    if Node.lookup["#{x},#{y}"].nil?
-      y_scan_matrix[y][x] = (pipes_seen % 2).zero? ? false : true
-    else
-      pipes_seen += 1
-      y_scan_matrix[y][x] = false
+    next if Node.lookup["#{x},#{y}"].nil? && prev_border == false
+
+    if !Node.lookup["#{x},#{y}"].nil? # if HAS LOOP PIPE
+      prev_border = true
+      y += 1 until Node.lookup["#{x},#{y}"].nil?
+      start = y
+      y += 1 while Node.lookup["#{x},#{y}"].nil? && y < lines.length
+      next if y >= lines.length
+
+      (start...y).each { |fill_y| y_scan_matrix[fill_y][x] = true }
+      y -= 1
     end
   end
 end
+
+# given a line
+# scan through the line
+# I want to if line[x] has node to left and to right it is inside
+# going from left to right:
+#   is there a preceding left node?
+#     continue until we hit a right node or EOL
+#   no preceding left node?
+#     ignore
 
 res = 0
 x_scan_matrix.each_with_index do |line, y|
