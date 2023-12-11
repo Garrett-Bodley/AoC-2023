@@ -122,6 +122,7 @@ log_matrix.each { |line| log_file.puts line.join('') }
 
 x_scan_matrix = lines.map { |line| Array.new(line.length, false) }
 y_scan_matrix = lines.map { |line| Array.new(line.length, false) }
+res_matrix = lines.map { |line| Array.new(line.length, false) }
 
 # x_scan_matrix.map!.with_index do |line, y|
 #   borders_crossed = 0
@@ -160,7 +161,6 @@ y_scan_matrix = lines.map { |line| Array.new(line.length, false) }
   end
 end
 
-
 (0...y_scan_matrix[0].length).each do |x|
 
   prev_border = false
@@ -190,9 +190,18 @@ end
 #     ignore
 
 res = 0
-x_scan_matrix.each_with_index do |line, y|
-  line.each_with_index do |val, x|
-    res += 1 if x_scan_matrix[y][x] == true && y_scan_matrix[y][x] == true
+(0...x_scan_matrix.length).each do |y|
+  xline = x_scan_matrix[y].map { |val| val ? '*' : ' ' }.join('')
+  yline = y_scan_matrix[y].map { |val| val ? '*' : ' ' }.join('')
+  x_groups = xline.enum_for(:scan, /\*+/).map { Regexp.last_match }
+  x_groups.each do |x_group|
+    next if yline.slice(x_group.begin(0), x_group[0].length).match?(/\s+/)
+
+    start = x_group.begin(0)
+    finish = start + x_group[0].length
+    (start...finish).each do |x|
+      res_matrix[y][x] = true
+    end
   end
 end
 
@@ -202,6 +211,7 @@ fill_log_path = log_path.parent.join('fill_log.txt')
 
 xscan_file = File.open(xscan_path, File::CREAT | File::RDWR | File::TRUNC)
 yscan_file = File.open(yscan_path, File::CREAT | File::RDWR | File::TRUNC)
+fill_log_file = File.open(fill_log_path, File::CREAT | File::RDWR | File::TRUNC)
 
 x_scan_matrix.each do |line|
   xscan_file.puts line.map { |val| val == true ? '*' : ' ' }.join('')
@@ -209,6 +219,15 @@ end
 
 y_scan_matrix.each do |line|
   yscan_file.puts line.map { |val| val == true ? '*' : ' ' }.join('')
+end
+
+res_matrix.each do |line|
+  fill_log_file.puts line.map { |val| val == true ? '*' : ' '}.join('')
+end
+
+# binding.pry
+res = res_matrix.reduce(0) do |row_accum, row|
+  row_accum + row.reduce(0) { |accum, val| val ? accum + 1 : accum }
 end
 
 puts res
