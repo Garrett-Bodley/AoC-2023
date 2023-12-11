@@ -36,8 +36,6 @@ empty_cols = []
   empty_cols << x if empty
 end
 
-# binding.pry
-
 expand_path = FILE_PATH.parent.join("exp_#{FILE_PATH.basename('.*')}.txt")
 expand_file = File.open(expand_path, 'w+')
 
@@ -57,14 +55,6 @@ end
 
 lines.each { |line| expand_file.puts line.join('') }
 
-# padded = lines.map { |line| ['.'] + line + ['.'] }
-
-# padded << Array.new(padded[0].length, '.')
-# padded.unshift Array.new(padded[0].length, '.')
-
-# expand_file.seek(0)
-# padded.each { |line| expand_file.puts line.join('') }
-
 Coord = Struct.new(:x, :y, :distance)
 
 galaxies = []
@@ -75,7 +65,6 @@ lines.each_with_index do |line, y|
   end
 end
 expand_file.flush
-# galaxies.each { |coord| puts "#{coord.x}, #{coord.y}" }
 
 pairs = []
 
