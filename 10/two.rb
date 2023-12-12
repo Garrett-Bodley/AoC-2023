@@ -31,13 +31,6 @@ startx = lines[starty].index { |c| c == 'S' }
 
 log_matrix = lines.map { |line| Array.new(line.length, ' ') }
 
-# search neighbors to see if there are nearby pipes
-#   what are the valid directions based on the current pipe piece?
-#   Only search valid directions
-# Keep moving down valid pathways until we return to S
-#   This is a BFS algorithm!
-#   Break loop when we've hit S
-
 # Represents a node in the pipe matrix
 class Node
   attr_accessor :x, :y, :shape, :to_prev
@@ -94,6 +87,27 @@ class Node
   def self.accessible?(shape, direction)
     @@shape_directions[shape].include?(direction)
   end
+
+  def self.flip_dir(dir)
+    @@flip_dir[dir]
+  end
+
+  def self.dirs_to_shape(dirs) # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
+    if dirs.include?('N')
+      case dirs.reject { |el| el == 'N' }[0] # rubocop:disable Style/HashLikeCase
+      when 'S'
+        '|'
+      when 'E'
+        'L'
+      when 'W'
+        'J'
+      end
+    elsif dirs.include?('S')
+      dirs.include?('E') ? 'F' : '7'
+    else
+      '-'
+    end
+  end
 end
 steps = [[Node.new(startx, starty, 'S', nil)]]
 log_matrix[starty][startx] = 'S'
@@ -118,114 +132,56 @@ catch :break_cycle do
   end
 end
 
-log_matrix.each { |line| log_file.puts line.join('') }
+# replace S with correct pipe segment in log_matrix
 
-x_scan_matrix = lines.map { |line| Array.new(line.length, false) }
-y_scan_matrix = lines.map { |line| Array.new(line.length, false) }
+start = Node.all.find { |n| n.shape == 'S' }
+connected = start.neighbors.filter do |x, y, to_prev|
+  neighbor = Node.lookup["#{x},#{y}"]
+  neighbor ? Node.accessible?(neighbor.shape, to_prev) : false
+end
+start_dirs = connected.map { |_, _, dir| Node.flip_dir(dir) }
+start.shape = Node.dirs_to_shape(start_dirs)
+
+log_matrix.each { |line| log_file.puts line.join('') }
+log_file.flush
+
 res_matrix = lines.map { |line| Array.new(line.length, false) }
 
-# x_scan_matrix.map!.with_index do |line, y|
-#   borders_crossed = 0
-#   prev = false
-#   line.map.with_index do |_, x|
-#     if Node.lookup["#{x},#{y}"].nil?
-#       borders_crossed += 1 if prev == true
-#       prev = false
-#       (borders_crossed % 2).zero? ? false : true
-#     else
-#       prev = true
-#       false
-#     end
-#   end
-# end
-#
+(0...res_matrix.length).each do |y|
+  line = res_matrix[y]
 
-(0...x_scan_matrix.length).each do |y|
-  line = x_scan_matrix[y]
-  prev_border = false
-  start = 0
-  finish = 0
+  borders_crossed = 0
   (0...line.length).each do |x|
-    next if Node.lookup["#{x},#{y}"].nil? && prev_border == false
+    next if Node.lookup["#{x},#{y}"].nil? && borders_crossed.even?
 
     if !Node.lookup["#{x},#{y}"].nil? # if HAS LOOP PIPE
-      prev_border = true
-      x += 1 until Node.lookup["#{x},#{y}"].nil?
-      start = x
-      x += 1 while Node.lookup["#{x},#{y}"].nil? && x < line.length
-      next if x >= line.length
+      shape = Node.lookup["#{x},#{y}"].shape
 
-      (start...x).each { |fill_x| line[fill_x] = true }
-      x -= 1
-    end
-  end
-end
-
-(0...y_scan_matrix[0].length).each do |x|
-
-  prev_border = false
-  (0...y_scan_matrix.length).each do |y|
-    next if Node.lookup["#{x},#{y}"].nil? && prev_border == false
-
-    if !Node.lookup["#{x},#{y}"].nil? # if HAS LOOP PIPE
-      prev_border = true
-      y += 1 until Node.lookup["#{x},#{y}"].nil?
-      start = y
-      y += 1 while Node.lookup["#{x},#{y}"].nil? && y < lines.length
-      next if y >= lines.length
-
-      (start...y).each { |fill_y| y_scan_matrix[fill_y][x] = true }
-      y -= 1
-    end
-  end
-end
-
-# given a line
-# scan through the line
-# I want to if line[x] has node to left and to right it is inside
-# going from left to right:
-#   is there a preceding left node?
-#     continue until we hit a right node or EOL
-#   no preceding left node?
-#     ignore
-
-res = 0
-(0...x_scan_matrix.length).each do |y|
-  xline = x_scan_matrix[y].map { |val| val ? '*' : ' ' }.join('')
-  yline = y_scan_matrix[y].map { |val| val ? '*' : ' ' }.join('')
-  x_groups = xline.enum_for(:scan, /\*+/).map { Regexp.last_match }
-  x_groups.each do |x_group|
-    next if yline.slice(x_group.begin(0), x_group[0].length).match?(/\s+/)
-
-    start = x_group.begin(0)
-    finish = start + x_group[0].length
-    (start...finish).each do |x|
+      case shape
+      when '|'
+        borders_crossed += 1
+      when 'L'
+        x += 1
+        x += 1 while Node.lookup["#{x},#{y}"].shape == '-'
+        borders_crossed += 1 if Node.lookup["#{x},#{y}"].shape == '7'
+      when 'F'
+        x += 1
+        x += 1 while Node.lookup["#{x},#{y}"].shape == '-'
+        borders_crossed += 1 if Node.lookup["#{x},#{y}"].shape == 'J'
+      end
+    elsif borders_crossed.odd?
       res_matrix[y][x] = true
     end
   end
 end
 
-xscan_path = log_path.parent.join('xscan.txt')
-yscan_path = log_path.parent.join('yscan.txt')
 fill_log_path = log_path.parent.join('fill_log.txt')
-
-xscan_file = File.open(xscan_path, File::CREAT | File::RDWR | File::TRUNC)
-yscan_file = File.open(yscan_path, File::CREAT | File::RDWR | File::TRUNC)
 fill_log_file = File.open(fill_log_path, File::CREAT | File::RDWR | File::TRUNC)
-
-x_scan_matrix.each do |line|
-  xscan_file.puts line.map { |val| val == true ? '*' : ' ' }.join('')
-end
-
-y_scan_matrix.each do |line|
-  yscan_file.puts line.map { |val| val == true ? '*' : ' ' }.join('')
-end
 
 res_matrix.each do |line|
   fill_log_file.puts line.map { |val| val == true ? '*' : ' '}.join('')
 end
 
-# binding.pry
 res = res_matrix.reduce(0) do |row_accum, row|
   row_accum + row.reduce(0) { |accum, val| val ? accum + 1 : accum }
 end
@@ -233,5 +189,6 @@ end
 puts res
 
 # 384 too low!
+# expects 411
 
 # rubocop:enable Style/ClassVars
