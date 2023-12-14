@@ -91,12 +91,10 @@ checksum = 0
 
 tilted.each do |row|
   row.each_char.with_index do |char, index|
-
     checksum += index + 1 if char == 'O'
   end
 end
 
 puts checksum
-binding.pry
 
 # expects 105208
