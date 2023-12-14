@@ -125,35 +125,27 @@ def multi_spin(matrix, count = 1)
   tmp
 end
 
-Node = Struct.new(:checksum, :matrix, :next)
 Cycle = Struct.new(:matrix, :index, :cycle_length)
 
 def find_cycle(matrix)
   visited = {}
   visited[matrix] = 0
-  history = [Node.new(checksum(matrix), matrix)]
+  cur = matrix
   (1...Float::INFINITY).each do |i|
-    last = history[-1]
-    spun = spin_cycle(last.matrix)
+    spun = spin_cycle(cur)
     if visited[spun]
       cycle_length = i - visited[spun]
       return Cycle.new(spun, visited[spun], cycle_length)
     else
       visited[spun] = i
-      history << Node.new(checksum(spun), spun)
-      last.next = history[-1]
+      cur = spun
     end
   end
 end
 
 cycle = find_cycle(rotated)
-
 lead_in = cycle.index
-
 spin_count = lead_in + (1_000_000_000 - lead_in) % cycle.cycle_length
-
-# log_matrix = MatrixRotate.counter_clockwise(spun)
-
 checksum = checksum(multi_spin(rotated, spin_count))
 
 puts checksum
