@@ -107,29 +107,55 @@ def checksum(matrix)
 end
 
 def spin_cycle(matrix)
-
-  # MatrixRotate.clockwise(tilt_matrix(
-  #                          MatrixRotate.clockwise(tilt_matrix(
-  #                                                   MatrixRotate.clockwise(tilt_matrix(
-  #                                                                            MatrixRotate.clockwise(tilt_matrix(matrix))))))))
+  tmp = matrix
+  4.times do
+    tmp = tilt_matrix(tmp)
+    tmp = MatrixRotate.clockwise(tmp)
+  end
+  tmp
 end
 
 $spin_dict = {}
-def mult_spin(matrix, count)
+def multi_spin(matrix, count = 1)
   tmp = matrix
-  count.times do
+  count.times do |i|
     $spin_dict[tmp] = spin_cycle(tmp)
     tmp = $spin_dict[tmp]
   end
   tmp
 end
 
-tilted = tilt_matrix(rotated)
-# binding.pry
-# spun = mult_spin(rotated)
+Node = Struct.new(:checksum, :matrix, :next)
+Cycle = Struct.new(:matrix, :index, :cycle_length)
 
-checksum = checksum(tilted)
+def find_cycle(matrix)
+  visited = {}
+  visited[matrix] = 0
+  history = [Node.new(checksum(matrix), matrix)]
+  (1...Float::INFINITY).each do |i|
+    last = history[-1]
+    spun = spin_cycle(last.matrix)
+    if visited[spun]
+      cycle_length = i - visited[spun]
+      return Cycle.new(spun, visited[spun], cycle_length)
+    else
+      visited[spun] = i
+      history << Node.new(checksum(spun), spun)
+      last.next = history[-1]
+    end
+  end
+end
+
+cycle = find_cycle(rotated)
+
+lead_in = cycle.index
+
+spin_count = lead_in + (1_000_000_000 - lead_in) % cycle.cycle_length
+
+# log_matrix = MatrixRotate.counter_clockwise(spun)
+
+checksum = checksum(multi_spin(rotated, spin_count))
 
 puts checksum
 
-# expects 105208
+# expects 102943
