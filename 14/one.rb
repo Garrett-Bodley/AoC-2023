@@ -19,7 +19,7 @@ lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true).map { |line| l
 rotated_path = "#{FILE_PATH.basename('.*')}_rotated_log.txt"
 rotated_file = File.open(rotated_path, 'w+')
 
-# rotates the matrix clockwise
+# Rotates the matrix clockwise
 def rotate(matrix)
   rotated = []
   (0...matrix[0].length).each do |x|
@@ -33,6 +33,7 @@ def rotate(matrix)
 end
 
 # problem has changed. We are now tilting EAST aka RIGHT
+# It's easier for me to think in rows instead of columns
 
 rotated = rotate(lines)
 rotated.each { |row| rotated_file.puts row.join('') }
@@ -58,6 +59,8 @@ def tilt(str)
   str
 end
 
+# splits the string into substrings separated by '#'.
+# Each '#' becomes an empty string element in the subsequent array
 def weird_split(str)
   res = []
   sub_str = ''
@@ -75,6 +78,7 @@ def weird_split(str)
   res
 end
 
+# Joins my weird hacky split format back together
 def weird_join(arr)
   arr.map { |str| str.empty? ? '#' : str }.join
 end

@@ -1,0 +1,2133 @@
+num: 101998
+  cycle_length: 10000, times: 1
+num: 96893
+  cycle_length: 1, times: 1
+  cycle_length: 9999, times: 1
+num: 92617
+  cycle_length: 2, times: 1
+  cycle_length: 9998, times: 1
+num: 96258
+  cycle_length: 3, times: 1
+  cycle_length: 9997, times: 1
+num: 100901
+  cycle_length: 4, times: 1
+  cycle_length: 9996, times: 1
+num: 96965
+  cycle_length: 5, times: 1
+  cycle_length: 9995, times: 1
+num: 92625
+  cycle_length: 6, times: 1
+  cycle_length: 9994, times: 1
+num: 96283
+  cycle_length: 7, times: 1
+  cycle_length: 9993, times: 1
+num: 100975
+  cycle_length: 8, times: 1
+  cycle_length: 9992, times: 1
+num: 97128
+  cycle_length: 9, times: 1
+  cycle_length: 9991, times: 1
+num: 92608
+  cycle_length: 10, times: 1
+  cycle_length: 9990, times: 1
+num: 96302
+  cycle_length: 11, times: 1
+  cycle_length: 9989, times: 1
+num: 100936
+  cycle_length: 12, times: 1
+  cycle_length: 9988, times: 1
+num: 97008
+  cycle_length: 13, times: 1
+  cycle_length: 9987, times: 1
+num: 92657
+  cycle_length: 14, times: 1
+  cycle_length: 9986, times: 1
+num: 96599
+  cycle_length: 15, times: 1
+  cycle_length: 9985, times: 1
+num: 101009
+  cycle_length: 16, times: 1
+  cycle_length: 9984, times: 1
+num: 96725
+  cycle_length: 17, times: 1
+  cycle_length: 9983, times: 1
+num: 92580
+  cycle_length: 18, times: 1
+  cycle_length: 9982, times: 1
+num: 96903
+  cycle_length: 19, times: 1
+  cycle_length: 9981, times: 1
+num: 101145
+  cycle_length: 20, times: 1
+  cycle_length: 9980, times: 1
+num: 96473
+  cycle_length: 21, times: 1
+  cycle_length: 9979, times: 1
+num: 92602
+  cycle_length: 22, times: 1
+  cycle_length: 9978, times: 1
+num: 97115
+  cycle_length: 23, times: 1
+  cycle_length: 9977, times: 1
+num: 101160
+  cycle_length: 24, times: 1
+  cycle_length: 9976, times: 1
+num: 96296
+  cycle_length: 25, times: 1
+  cycle_length: 9975, times: 1
+num: 92569
+  cycle_length: 26, times: 1
+  cycle_length: 9974, times: 1
+num: 97339
+  cycle_length: 27, times: 1
+  cycle_length: 9973, times: 1
+num: 101255
+  cycle_length: 28, times: 1
+  cycle_length: 9972, times: 1
+num: 96143
+  cycle_length: 29, times: 1
+  cycle_length: 9971, times: 1
+num: 92469
+  cycle_length: 30, times: 1
+  cycle_length: 9970, times: 1
+num: 97474
+  cycle_length: 31, times: 1
+  cycle_length: 9969, times: 1
+num: 101370
+  cycle_length: 32, times: 1
+  cycle_length: 9968, times: 1
+num: 96057
+  cycle_length: 33, times: 1
+  cycle_length: 9967, times: 1
+num: 92366
+  cycle_length: 34, times: 1
+  cycle_length: 9966, times: 1
+num: 97591
+  cycle_length: 35, times: 1
+  cycle_length: 9965, times: 1
+num: 101462
+  cycle_length: 36, times: 1
+  cycle_length: 9964, times: 1
+num: 95951
+  cycle_length: 37, times: 1
+  cycle_length: 9963, times: 1
+num: 92274
+  cycle_length: 38, times: 1
+  cycle_length: 9962, times: 1
+num: 97676
+  cycle_length: 39, times: 1
+  cycle_length: 9961, times: 1
+num: 101573
+  cycle_length: 40, times: 1
+  cycle_length: 9960, times: 1
+num: 95849
+  cycle_length: 41, times: 1
+  cycle_length: 9959, times: 1
+num: 92220
+  cycle_length: 42, times: 1
+  cycle_length: 9958, times: 1
+num: 97789
+  cycle_length: 43, times: 1
+  cycle_length: 9957, times: 1
+num: 101653
+  cycle_length: 44, times: 1
+  cycle_length: 9956, times: 1
+num: 95718
+  cycle_length: 45, times: 1
+  cycle_length: 9955, times: 1
+num: 92157
+  cycle_length: 46, times: 1
+  cycle_length: 9954, times: 1
+num: 97923
+  cycle_length: 47, times: 1
+  cycle_length: 9953, times: 1
+num: 101730
+  cycle_length: 48, times: 1
+  cycle_length: 9952, times: 1
+num: 95588
+  cycle_length: 49, times: 1
+  cycle_length: 9951, times: 1
+num: 92056
+  cycle_length: 50, times: 1
+  cycle_length: 9950, times: 1
+num: 98005
+  cycle_length: 51, times: 1
+  cycle_length: 9949, times: 1
+num: 101771
+  cycle_length: 52, times: 1
+  cycle_length: 9948, times: 1
+num: 95505
+  cycle_length: 53, times: 1
+  cycle_length: 9947, times: 1
+num: 92027
+  cycle_length: 54, times: 1
+  cycle_length: 9946, times: 1
+num: 98098
+  cycle_length: 55, times: 1
+  cycle_length: 9945, times: 1
+num: 101867
+  cycle_length: 56, times: 1
+  cycle_length: 9944, times: 1
+num: 95448
+  cycle_length: 57, times: 1
+  cycle_length: 9943, times: 1
+num: 91938
+  cycle_length: 58, times: 1
+  cycle_length: 9942, times: 1
+num: 98170
+  cycle_length: 59, times: 1
+  cycle_length: 9941, times: 1
+num: 101938
+  cycle_length: 60, times: 1
+  cycle_length: 9940, times: 1
+num: 95333
+  cycle_length: 61, times: 1
+  cycle_length: 9939, times: 1
+num: 91864
+  cycle_length: 62, times: 1
+  cycle_length: 9938, times: 1
+num: 98303
+  cycle_length: 63, times: 1
+  cycle_length: 9937, times: 1
+num: 102034
+  cycle_length: 64, times: 1
+  cycle_length: 9936, times: 1
+num: 95214
+  cycle_length: 65, times: 1
+  cycle_length: 9935, times: 1
+num: 91742
+  cycle_length: 66, times: 1
+  cycle_length: 9934, times: 1
+num: 98407
+  cycle_length: 67, times: 1
+  cycle_length: 9933, times: 1
+num: 102156
+  cycle_length: 68, times: 1
+  cycle_length: 9932, times: 1
+num: 95117
+  cycle_length: 69, times: 1
+  cycle_length: 9931, times: 1
+num: 91652
+  cycle_length: 70, times: 1
+  cycle_length: 9930, times: 1
+num: 98497
+  cycle_length: 71, times: 1
+  cycle_length: 9929, times: 1
+num: 102245
+  cycle_length: 72, times: 1
+  cycle_length: 9928, times: 1
+num: 95020
+  cycle_length: 73, times: 1
+  cycle_length: 9927, times: 1
+num: 91586
+  cycle_length: 74, times: 1
+  cycle_length: 9926, times: 1
+num: 98549
+  cycle_length: 75, times: 1
+  cycle_length: 9925, times: 1
+num: 102320
+  cycle_length: 76, times: 1
+  cycle_length: 9924, times: 1
+num: 94940
+  cycle_length: 77, times: 1
+  cycle_length: 9923, times: 1
+num: 91479
+  cycle_length: 78, times: 1
+  cycle_length: 9922, times: 1
+num: 98634
+  cycle_length: 79, times: 1
+  cycle_length: 9921, times: 1
+num: 102432
+  cycle_length: 80, times: 1
+  cycle_length: 9920, times: 1
+num: 94843
+  cycle_length: 81, times: 1
+  cycle_length: 9919, times: 1
+num: 91381
+  cycle_length: 82, times: 1
+  cycle_length: 9918, times: 1
+num: 98720
+  cycle_length: 83, times: 1
+  cycle_length: 9917, times: 1
+num: 102488
+  cycle_length: 84, times: 1
+  cycle_length: 9916, times: 1
+num: 94782
+  cycle_length: 85, times: 1
+  cycle_length: 9915, times: 1
+num: 91362
+  cycle_length: 86, times: 1
+  cycle_length: 9914, times: 1
+num: 98787
+  cycle_length: 87, times: 1
+  cycle_length: 9913, times: 1
+num: 102479
+  cycle_length: 88, times: 1
+  cycle_length: 9912, times: 1
+num: 94738
+  cycle_length: 89, times: 1
+  cycle_length: 9911, times: 1
+num: 91388
+  cycle_length: 90, times: 1
+  cycle_length: 9910, times: 1
+num: 98845
+  cycle_length: 91, times: 1
+  cycle_length: 9909, times: 1
+num: 102487
+  cycle_length: 92, times: 1
+  cycle_length: 9908, times: 1
+num: 94696
+  cycle_length: 93, times: 1
+  cycle_length: 9907, times: 1
+num: 91385
+  cycle_length: 94, times: 1
+  cycle_length: 9906, times: 1
+num: 98886
+  cycle_length: 95, times: 1
+  cycle_length: 9905, times: 1
+num: 102527
+  cycle_length: 96, times: 1
+  cycle_length: 9904, times: 1
+num: 94635
+  cycle_length: 97, times: 1
+  cycle_length: 9903, times: 1
+num: 91333
+  cycle_length: 98, times: 1
+  cycle_length: 9902, times: 1
+num: 98948
+  cycle_length: 99, times: 1
+  cycle_length: 9901, times: 1
+num: 102508
+  cycle_length: 100, times: 1
+  cycle_length: 9900, times: 1
+num: 94568
+  cycle_length: 101, times: 1
+  cycle_length: 9899, times: 1
+num: 91344
+  cycle_length: 102, times: 1
+  cycle_length: 9898, times: 1
+num: 99035
+  cycle_length: 103, times: 1
+  cycle_length: 9897, times: 1
+num: 102522
+  cycle_length: 104, times: 1
+  cycle_length: 243, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 77, times: 1
+num: 94483
+  cycle_length: 105, times: 1
+  cycle_length: 9895, times: 1
+num: 91300
+  cycle_length: 106, times: 1
+  cycle_length: 9894, times: 1
+num: 99104
+  cycle_length: 107, times: 1
+  cycle_length: 9893, times: 1
+num: 102588
+  cycle_length: 108, times: 1
+  cycle_length: 311, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 5, times: 1
+num: 94404
+  cycle_length: 109, times: 1
+  cycle_length: 9891, times: 1
+num: 91284
+  cycle_length: 110, times: 1
+  cycle_length: 9890, times: 1
+num: 99181
+  cycle_length: 111, times: 1
+  cycle_length: 9889, times: 1
+num: 102601
+  cycle_length: 112, times: 1
+  cycle_length: 9888, times: 1
+num: 94353
+  cycle_length: 113, times: 1
+  cycle_length: 9887, times: 1
+num: 91269
+  cycle_length: 114, times: 1
+  cycle_length: 9886, times: 1
+num: 99194
+  cycle_length: 115, times: 1
+  cycle_length: 9885, times: 1
+num: 102599
+  cycle_length: 116, times: 1
+  cycle_length: 9884, times: 1
+num: 94332
+  cycle_length: 117, times: 1
+  cycle_length: 9883, times: 1
+num: 91252
+  cycle_length: 118, times: 1
+  cycle_length: 9882, times: 1
+num: 99247
+  cycle_length: 119, times: 1
+  cycle_length: 9881, times: 1
+num: 102648
+  cycle_length: 120, times: 1
+  cycle_length: 9880, times: 1
+num: 94279
+  cycle_length: 121, times: 1
+  cycle_length: 9879, times: 1
+num: 91230
+  cycle_length: 122, times: 1
+  cycle_length: 9878, times: 1
+num: 99311
+  cycle_length: 123, times: 1
+  cycle_length: 9877, times: 1
+num: 102656
+  cycle_length: 124, times: 1
+  cycle_length: 9876, times: 1
+num: 94241
+  cycle_length: 125, times: 1
+  cycle_length: 9875, times: 1
+num: 91219
+  cycle_length: 126, times: 1
+  cycle_length: 9874, times: 1
+num: 99361
+  cycle_length: 127, times: 1
+  cycle_length: 9873, times: 1
+num: 102703
+  cycle_length: 128, times: 1
+  cycle_length: 9872, times: 1
+num: 94168
+  cycle_length: 129, times: 1
+  cycle_length: 9871, times: 1
+num: 91164
+  cycle_length: 130, times: 1
+  cycle_length: 9870, times: 1
+num: 99432
+  cycle_length: 131, times: 1
+  cycle_length: 9869, times: 1
+num: 102736
+  cycle_length: 132, times: 1
+  cycle_length: 9868, times: 1
+num: 94087
+  cycle_length: 133, times: 1
+  cycle_length: 9867, times: 1
+num: 91131
+  cycle_length: 134, times: 1
+  cycle_length: 9866, times: 1
+num: 99514
+  cycle_length: 135, times: 1
+  cycle_length: 9865, times: 1
+num: 102782
+  cycle_length: 136, times: 1
+  cycle_length: 9864, times: 1
+num: 93985
+  cycle_length: 137, times: 1
+  cycle_length: 9863, times: 1
+num: 91082
+  cycle_length: 138, times: 1
+  cycle_length: 9862, times: 1
+num: 99599
+  cycle_length: 139, times: 1
+  cycle_length: 9861, times: 1
+num: 102832
+  cycle_length: 140, times: 1
+  cycle_length: 9860, times: 1
+num: 93897
+  cycle_length: 141, times: 1
+  cycle_length: 9859, times: 1
+num: 91021
+  cycle_length: 142, times: 1
+  cycle_length: 9858, times: 1
+num: 99669
+  cycle_length: 143, times: 1
+  cycle_length: 9857, times: 1
+num: 102909
+  cycle_length: 144, times: 1
+  cycle_length: 9856, times: 1
+num: 93834
+  cycle_length: 145, times: 1
+  cycle_length: 9855, times: 1
+num: 90916
+  cycle_length: 146, times: 1
+  cycle_length: 9854, times: 1
+num: 99733
+  cycle_length: 147, times: 1
+  cycle_length: 9853, times: 1
+num: 102994
+  cycle_length: 148, times: 1
+  cycle_length: 9852, times: 1
+num: 93748
+  cycle_length: 149, times: 1
+  cycle_length: 9851, times: 1
+num: 90838
+  cycle_length: 150, times: 1
+  cycle_length: 9850, times: 1
+num: 99833
+  cycle_length: 151, times: 1
+  cycle_length: 9849, times: 1
+num: 103075
+  cycle_length: 152, times: 1
+  cycle_length: 9848, times: 1
+num: 93640
+  cycle_length: 153, times: 1
+  cycle_length: 9847, times: 1
+num: 90749
+  cycle_length: 154, times: 1
+  cycle_length: 9846, times: 1
+num: 99939
+  cycle_length: 155, times: 1
+  cycle_length: 9845, times: 1
+num: 103170
+  cycle_length: 156, times: 1
+  cycle_length: 9844, times: 1
+num: 93530
+  cycle_length: 157, times: 1
+  cycle_length: 9843, times: 1
+num: 90660
+  cycle_length: 158, times: 1
+  cycle_length: 147, times: 1
+  cycle_length: 9695, times: 1
+num: 100060
+  cycle_length: 159, times: 1
+  cycle_length: 9841, times: 1
+num: 103285
+  cycle_length: 160, times: 1
+  cycle_length: 9840, times: 1
+num: 93424
+  cycle_length: 161, times: 1
+  cycle_length: 9839, times: 1
+num: 90541
+  cycle_length: 162, times: 1
+  cycle_length: 9838, times: 1
+num: 100179
+  cycle_length: 163, times: 1
+  cycle_length: 9837, times: 1
+num: 103382
+  cycle_length: 164, times: 1
+  cycle_length: 9836, times: 1
+num: 93308
+  cycle_length: 165, times: 1
+  cycle_length: 9835, times: 1
+num: 90452
+  cycle_length: 166, times: 1
+  cycle_length: 9834, times: 1
+num: 100287
+  cycle_length: 167, times: 1
+  cycle_length: 9833, times: 1
+num: 103465
+  cycle_length: 168, times: 1
+  cycle_length: 9832, times: 1
+num: 93186
+  cycle_length: 169, times: 1
+  cycle_length: 9831, times: 1
+num: 90374
+  cycle_length: 170, times: 1
+  cycle_length: 9830, times: 1
+num: 100408
+  cycle_length: 171, times: 1
+  cycle_length: 9829, times: 1
+num: 103566
+  cycle_length: 172, times: 1
+  cycle_length: 9828, times: 1
+num: 93062
+  cycle_length: 173, times: 1
+  cycle_length: 9827, times: 1
+num: 90270
+  cycle_length: 174, times: 1
+  cycle_length: 9826, times: 1
+num: 100535
+  cycle_length: 175, times: 1
+  cycle_length: 9825, times: 1
+num: 103660
+  cycle_length: 176, times: 1
+  cycle_length: 9824, times: 1
+num: 92938
+  cycle_length: 177, times: 1
+  cycle_length: 9823, times: 1
+num: 90184
+  cycle_length: 178, times: 1
+  cycle_length: 9822, times: 1
+num: 100643
+  cycle_length: 179, times: 1
+  cycle_length: 9821, times: 1
+num: 103720
+  cycle_length: 180, times: 1
+  cycle_length: 124, times: 1
+  cycle_length: 9696, times: 1
+num: 92821
+  cycle_length: 181, times: 1
+  cycle_length: 9819, times: 1
+num: 90131
+  cycle_length: 182, times: 1
+  cycle_length: 9818, times: 1
+num: 100751
+  cycle_length: 183, times: 1
+  cycle_length: 9817, times: 1
+num: 103774
+  cycle_length: 184, times: 1
+  cycle_length: 9816, times: 1
+num: 92700
+  cycle_length: 185, times: 1
+  cycle_length: 9815, times: 1
+num: 90096
+  cycle_length: 186, times: 1
+  cycle_length: 9814, times: 1
+num: 100864
+  cycle_length: 187, times: 1
+  cycle_length: 9813, times: 1
+num: 103832
+  cycle_length: 188, times: 1
+  cycle_length: 9812, times: 1
+num: 92589
+  cycle_length: 189, times: 1
+  cycle_length: 9811, times: 1
+num: 90053
+  cycle_length: 190, times: 1
+  cycle_length: 9810, times: 1
+num: 100977
+  cycle_length: 191, times: 1
+  cycle_length: 9809, times: 1
+num: 103888
+  cycle_length: 192, times: 1
+  cycle_length: 9808, times: 1
+num: 92475
+  cycle_length: 193, times: 1
+  cycle_length: 9807, times: 1
+num: 90002
+  cycle_length: 194, times: 1
+  cycle_length: 9806, times: 1
+num: 101103
+  cycle_length: 195, times: 1
+  cycle_length: 9805, times: 1
+num: 103920
+  cycle_length: 196, times: 1
+  cycle_length: 9804, times: 1
+num: 92347
+  cycle_length: 197, times: 1
+  cycle_length: 9803, times: 1
+num: 89976
+  cycle_length: 198, times: 1
+  cycle_length: 9802, times: 1
+num: 101236
+  cycle_length: 199, times: 1
+  cycle_length: 9801, times: 1
+num: 103951
+  cycle_length: 200, times: 1
+  cycle_length: 9800, times: 1
+num: 92211
+  cycle_length: 201, times: 1
+  cycle_length: 9799, times: 1
+num: 89942
+  cycle_length: 202, times: 1
+  cycle_length: 9798, times: 1
+num: 101379
+  cycle_length: 203, times: 1
+  cycle_length: 9797, times: 1
+num: 104000
+  cycle_length: 204, times: 1
+  cycle_length: 9796, times: 1
+num: 92083
+  cycle_length: 205, times: 1
+  cycle_length: 9795, times: 1
+num: 89893
+  cycle_length: 206, times: 1
+  cycle_length: 9794, times: 1
+num: 101513
+  cycle_length: 207, times: 1
+  cycle_length: 9793, times: 1
+num: 104071
+  cycle_length: 208, times: 1
+  cycle_length: 68, times: 1
+  cycle_length: 9724, times: 1
+num: 91961
+  cycle_length: 209, times: 1
+  cycle_length: 9791, times: 1
+num: 89820
+  cycle_length: 210, times: 1
+  cycle_length: 9790, times: 1
+num: 101647
+  cycle_length: 211, times: 1
+  cycle_length: 9789, times: 1
+num: 104125
+  cycle_length: 212, times: 1
+  cycle_length: 9788, times: 1
+num: 91813
+  cycle_length: 213, times: 1
+  cycle_length: 9787, times: 1
+num: 89772
+  cycle_length: 214, times: 1
+  cycle_length: 9786, times: 1
+num: 101793
+  cycle_length: 215, times: 1
+  cycle_length: 9785, times: 1
+num: 104157
+  cycle_length: 216, times: 1
+  cycle_length: 9784, times: 1
+num: 91660
+  cycle_length: 217, times: 1
+  cycle_length: 9783, times: 1
+num: 89744
+  cycle_length: 218, times: 1
+  cycle_length: 9782, times: 1
+num: 101940
+  cycle_length: 219, times: 1
+  cycle_length: 9781, times: 1
+num: 104193
+  cycle_length: 220, times: 1
+  cycle_length: 9780, times: 1
+num: 91533
+  cycle_length: 221, times: 1
+  cycle_length: 9779, times: 1
+num: 89719
+  cycle_length: 222, times: 1
+  cycle_length: 9778, times: 1
+num: 102044
+  cycle_length: 223, times: 1
+  cycle_length: 9777, times: 1
+num: 104224
+  cycle_length: 224, times: 1
+  cycle_length: 9776, times: 1
+num: 91456
+  cycle_length: 225, times: 1
+  cycle_length: 9775, times: 1
+num: 89685
+  cycle_length: 226, times: 1
+  cycle_length: 9774, times: 1
+num: 102129
+  cycle_length: 227, times: 1
+  cycle_length: 9773, times: 1
+num: 104240
+  cycle_length: 228, times: 1
+  cycle_length: 9772, times: 1
+num: 91360
+  cycle_length: 229, times: 1
+  cycle_length: 9771, times: 1
+num: 89687
+  cycle_length: 230, times: 1
+  cycle_length: 9770, times: 1
+num: 102231
+  cycle_length: 231, times: 1
+  cycle_length: 9769, times: 1
+num: 104232
+  cycle_length: 232, times: 1
+  cycle_length: 9768, times: 1
+num: 91259
+  cycle_length: 233, times: 1
+  cycle_length: 9767, times: 1
+num: 89704
+  cycle_length: 234, times: 1
+  cycle_length: 9766, times: 1
+num: 102330
+  cycle_length: 235, times: 1
+  cycle_length: 9765, times: 1
+num: 104228
+  cycle_length: 236, times: 1
+  cycle_length: 9764, times: 1
+num: 91179
+  cycle_length: 237, times: 1
+  cycle_length: 9763, times: 1
+num: 89710
+  cycle_length: 238, times: 1
+  cycle_length: 9762, times: 1
+num: 102421
+  cycle_length: 239, times: 1
+  cycle_length: 9761, times: 1
+num: 104210
+  cycle_length: 240, times: 1
+  cycle_length: 9760, times: 1
+num: 91079
+  cycle_length: 241, times: 1
+  cycle_length: 9759, times: 1
+num: 89728
+  cycle_length: 242, times: 1
+  cycle_length: 8, times: 1
+  cycle_length: 9750, times: 1
+num: 102516
+  cycle_length: 243, times: 1
+  cycle_length: 9757, times: 1
+num: 104191
+  cycle_length: 244, times: 1
+  cycle_length: 9756, times: 1
+num: 90996
+  cycle_length: 245, times: 1
+  cycle_length: 172, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 7, times: 1
+num: 89737
+  cycle_length: 246, times: 1
+  cycle_length: 9754, times: 1
+num: 102594
+  cycle_length: 247, times: 1
+  cycle_length: 9753, times: 1
+num: 104189
+  cycle_length: 248, times: 1
+  cycle_length: 9752, times: 1
+num: 90917
+  cycle_length: 249, times: 1
+  cycle_length: 9751, times: 1
+num: 102655
+  cycle_length: 251, times: 1
+  cycle_length: 9749, times: 1
+num: 104188
+  cycle_length: 252, times: 1
+  cycle_length: 9748, times: 1
+num: 90856
+  cycle_length: 253, times: 1
+  cycle_length: 9747, times: 1
+num: 89729
+  cycle_length: 254, times: 1
+  cycle_length: 9746, times: 1
+num: 102717
+  cycle_length: 255, times: 1
+  cycle_length: 9745, times: 1
+num: 104187
+  cycle_length: 256, times: 1
+  cycle_length: 9744, times: 1
+num: 90793
+  cycle_length: 257, times: 1
+  cycle_length: 172, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 163, times: 1
+num: 89738
+  cycle_length: 258, times: 1
+  cycle_length: 9742, times: 1
+num: 102772
+  cycle_length: 259, times: 1
+  cycle_length: 9741, times: 1
+num: 104184
+  cycle_length: 260, times: 1
+  cycle_length: 9740, times: 1
+num: 90744
+  cycle_length: 261, times: 1
+  cycle_length: 9739, times: 1
+num: 89739
+  cycle_length: 262, times: 1
+  cycle_length: 9738, times: 1
+num: 102813
+  cycle_length: 263, times: 1
+  cycle_length: 9737, times: 1
+num: 104178
+  cycle_length: 264, times: 1
+  cycle_length: 9736, times: 1
+num: 90704
+  cycle_length: 265, times: 1
+  cycle_length: 9735, times: 1
+num: 89763
+  cycle_length: 266, times: 1
+  cycle_length: 9734, times: 1
+num: 102867
+  cycle_length: 267, times: 1
+  cycle_length: 9733, times: 1
+num: 104147
+  cycle_length: 268, times: 1
+  cycle_length: 9732, times: 1
+num: 90667
+  cycle_length: 269, times: 1
+  cycle_length: 9731, times: 1
+num: 89797
+  cycle_length: 270, times: 1
+  cycle_length: 9730, times: 1
+num: 102904
+  cycle_length: 271, times: 1
+  cycle_length: 9729, times: 1
+num: 104119
+  cycle_length: 272, times: 1
+  cycle_length: 9728, times: 1
+num: 90630
+  cycle_length: 273, times: 1
+  cycle_length: 9727, times: 1
+num: 89839
+  cycle_length: 274, times: 1
+  cycle_length: 9726, times: 1
+num: 102949
+  cycle_length: 275, times: 1
+  cycle_length: 9725, times: 1
+num: 90596
+  cycle_length: 277, times: 1
+  cycle_length: 9723, times: 1
+num: 89881
+  cycle_length: 278, times: 1
+  cycle_length: 9722, times: 1
+num: 102981
+  cycle_length: 279, times: 1
+  cycle_length: 9721, times: 1
+num: 104026
+  cycle_length: 280, times: 1
+  cycle_length: 9720, times: 1
+num: 90580
+  cycle_length: 281, times: 1
+  cycle_length: 9719, times: 1
+num: 89928
+  cycle_length: 282, times: 1
+  cycle_length: 9718, times: 1
+num: 103007
+  cycle_length: 283, times: 1
+  cycle_length: 9717, times: 1
+num: 103980
+  cycle_length: 284, times: 1
+  cycle_length: 9716, times: 1
+num: 90561
+  cycle_length: 285, times: 1
+  cycle_length: 9715, times: 1
+num: 89986
+  cycle_length: 286, times: 1
+  cycle_length: 9714, times: 1
+num: 103027
+  cycle_length: 287, times: 1
+  cycle_length: 9713, times: 1
+num: 103922
+  cycle_length: 288, times: 1
+  cycle_length: 9712, times: 1
+num: 90554
+  cycle_length: 289, times: 1
+  cycle_length: 4, times: 1
+  cycle_length: 9707, times: 1
+num: 90042
+  cycle_length: 290, times: 1
+  cycle_length: 9710, times: 1
+num: 103030
+  cycle_length: 291, times: 1
+  cycle_length: 9709, times: 1
+num: 103874
+  cycle_length: 292, times: 1
+  cycle_length: 9708, times: 1
+num: 90081
+  cycle_length: 294, times: 1
+  cycle_length: 9706, times: 1
+num: 103005
+  cycle_length: 295, times: 1
+  cycle_length: 9705, times: 1
+num: 103831
+  cycle_length: 296, times: 1
+  cycle_length: 9704, times: 1
+num: 90584
+  cycle_length: 297, times: 1
+  cycle_length: 9703, times: 1
+num: 90123
+  cycle_length: 298, times: 1
+  cycle_length: 9702, times: 1
+num: 102964
+  cycle_length: 299, times: 1
+  cycle_length: 9701, times: 1
+num: 103777
+  cycle_length: 300, times: 1
+  cycle_length: 9700, times: 1
+num: 90620
+  cycle_length: 301, times: 1
+  cycle_length: 9699, times: 1
+num: 90172
+  cycle_length: 302, times: 1
+  cycle_length: 9698, times: 1
+num: 102917
+  cycle_length: 303, times: 1
+  cycle_length: 9697, times: 1
+num: 90227
+  cycle_length: 306, times: 1
+  cycle_length: 9694, times: 1
+num: 102879
+  cycle_length: 307, times: 1
+  cycle_length: 9693, times: 1
+num: 103663
+  cycle_length: 308, times: 1
+  cycle_length: 9692, times: 1
+num: 90706
+  cycle_length: 309, times: 1
+  cycle_length: 9691, times: 1
+num: 90284
+  cycle_length: 310, times: 1
+  cycle_length: 9690, times: 1
+num: 102845
+  cycle_length: 311, times: 1
+  cycle_length: 9689, times: 1
+num: 103604
+  cycle_length: 312, times: 1
+  cycle_length: 9688, times: 1
+num: 90748
+  cycle_length: 313, times: 1
+  cycle_length: 9687, times: 1
+num: 90351
+  cycle_length: 314, times: 1
+  cycle_length: 9686, times: 1
+num: 102803
+  cycle_length: 315, times: 1
+  cycle_length: 9685, times: 1
+num: 103541
+  cycle_length: 316, times: 1
+  cycle_length: 9684, times: 1
+num: 90796
+  cycle_length: 317, times: 1
+  cycle_length: 9683, times: 1
+num: 90419
+  cycle_length: 318, times: 1
+  cycle_length: 9682, times: 1
+num: 102780
+  cycle_length: 319, times: 1
+  cycle_length: 9681, times: 1
+num: 103475
+  cycle_length: 320, times: 1
+  cycle_length: 9680, times: 1
+num: 90822
+  cycle_length: 321, times: 1
+  cycle_length: 9679, times: 1
+num: 90478
+  cycle_length: 322, times: 1
+  cycle_length: 9678, times: 1
+num: 102760
+  cycle_length: 323, times: 1
+  cycle_length: 9677, times: 1
+num: 103414
+  cycle_length: 324, times: 1
+  cycle_length: 9676, times: 1
+num: 90840
+  cycle_length: 325, times: 1
+  cycle_length: 9675, times: 1
+num: 90538
+  cycle_length: 326, times: 1
+  cycle_length: 9674, times: 1
+num: 102727
+  cycle_length: 327, times: 1
+  cycle_length: 9673, times: 1
+num: 103356
+  cycle_length: 328, times: 1
+  cycle_length: 9672, times: 1
+num: 90874
+  cycle_length: 329, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 95, times: 1
+num: 90588
+  cycle_length: 330, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 94, times: 1
+num: 102696
+  cycle_length: 331, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 93, times: 1
+num: 103308
+  cycle_length: 332, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 92, times: 1
+num: 90909
+  cycle_length: 333, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 91, times: 1
+num: 90635
+  cycle_length: 334, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 90, times: 1
+num: 102660
+  cycle_length: 335, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 89, times: 1
+num: 103267
+  cycle_length: 336, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 88, times: 1
+num: 90940
+  cycle_length: 337, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 87, times: 1
+num: 90661
+  cycle_length: 338, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 86, times: 1
+num: 102625
+  cycle_length: 339, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 85, times: 1
+num: 103243
+  cycle_length: 340, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 84, times: 1
+num: 90980
+  cycle_length: 341, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 83, times: 1
+num: 90685
+  cycle_length: 342, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 82, times: 1
+num: 102574
+  cycle_length: 343, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 81, times: 1
+num: 103224
+  cycle_length: 344, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 80, times: 1
+num: 91028
+  cycle_length: 345, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 79, times: 1
+num: 90708
+  cycle_length: 346, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 78, times: 1
+num: 103206
+  cycle_length: 348, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 76, times: 1
+num: 91076
+  cycle_length: 349, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 75, times: 1
+num: 90714
+  cycle_length: 350, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 74, times: 1
+num: 102471
+  cycle_length: 351, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 73, times: 1
+num: 103198
+  cycle_length: 352, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 72, times: 1
+num: 91117
+  cycle_length: 353, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 71, times: 1
+num: 90703
+  cycle_length: 354, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 70, times: 1
+num: 102417
+  cycle_length: 355, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 69, times: 1
+num: 103214
+  cycle_length: 356, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 68, times: 1
+num: 91167
+  cycle_length: 357, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 67, times: 1
+num: 90686
+  cycle_length: 358, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 66, times: 1
+num: 102369
+  cycle_length: 359, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 65, times: 1
+num: 103235
+  cycle_length: 360, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 64, times: 1
+num: 91214
+  cycle_length: 361, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 63, times: 1
+num: 90681
+  cycle_length: 362, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 62, times: 1
+num: 102338
+  cycle_length: 363, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 61, times: 1
+num: 103244
+  cycle_length: 364, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 60, times: 1
+num: 91243
+  cycle_length: 365, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 59, times: 1
+num: 90668
+  cycle_length: 366, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 58, times: 1
+num: 102324
+  cycle_length: 367, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 57, times: 1
+num: 103260
+  cycle_length: 368, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 56, times: 1
+num: 91256
+  cycle_length: 369, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 55, times: 1
+num: 90656
+  cycle_length: 370, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 54, times: 1
+num: 102329
+  cycle_length: 371, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 53, times: 1
+num: 103284
+  cycle_length: 372, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 52, times: 1
+num: 91262
+  cycle_length: 373, times: 1
+  cycle_length: 16, times: 58
+  cycle_length: 152, times: 57
+  cycle_length: 35, times: 1
+num: 90624
+  cycle_length: 374, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 50, times: 1
+num: 102310
+  cycle_length: 375, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 49, times: 1
+num: 103326
+  cycle_length: 376, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 48, times: 1
+num: 91260
+  cycle_length: 377, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 47, times: 1
+num: 90583
+  cycle_length: 378, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 46, times: 1
+num: 102303
+  cycle_length: 379, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 45, times: 1
+num: 103364
+  cycle_length: 380, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 44, times: 1
+num: 91265
+  cycle_length: 381, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 43, times: 1
+num: 90523
+  cycle_length: 382, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 42, times: 1
+num: 102291
+  cycle_length: 383, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 41, times: 1
+num: 103430
+  cycle_length: 384, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 40, times: 1
+num: 91271
+  cycle_length: 385, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 39, times: 1
+num: 90455
+  cycle_length: 386, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 38, times: 1
+num: 102279
+  cycle_length: 387, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 37, times: 1
+num: 103505
+  cycle_length: 388, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 36, times: 1
+num: 90382
+  cycle_length: 390, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 34, times: 1
+num: 102281
+  cycle_length: 391, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 33, times: 1
+num: 103581
+  cycle_length: 392, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 32, times: 1
+num: 91261
+  cycle_length: 393, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 31, times: 1
+num: 90299
+  cycle_length: 394, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 30, times: 1
+num: 102282
+  cycle_length: 395, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 29, times: 1
+num: 103662
+  cycle_length: 396, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 28, times: 1
+num: 91246
+  cycle_length: 397, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 27, times: 1
+num: 90225
+  cycle_length: 398, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 26, times: 1
+num: 102301
+  cycle_length: 399, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 25, times: 1
+num: 103735
+  cycle_length: 400, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 24, times: 1
+num: 91222
+  cycle_length: 401, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 23, times: 1
+num: 90146
+  cycle_length: 402, times: 1
+  cycle_length: 60, times: 57
+  cycle_length: 108, times: 57
+  cycle_length: 22, times: 1
+num: 102341
+  cycle_length: 403, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 21, times: 1
+num: 103815
+  cycle_length: 404, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 20, times: 1
+num: 91175
+  cycle_length: 405, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 19, times: 1
+num: 90067
+  cycle_length: 406, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 18, times: 1
+num: 102397
+  cycle_length: 407, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 17, times: 1
+num: 103896
+  cycle_length: 408, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 16, times: 1
+num: 91126
+  cycle_length: 409, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 15, times: 1
+num: 89999
+  cycle_length: 410, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 14, times: 1
+num: 102455
+  cycle_length: 411, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 13, times: 1
+num: 103962
+  cycle_length: 412, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 12, times: 1
+num: 91069
+  cycle_length: 413, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 11, times: 1
+num: 89956
+  cycle_length: 414, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 10, times: 1
+num: 102523
+  cycle_length: 415, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 9, times: 1
+num: 103995
+  cycle_length: 416, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 8, times: 1
+num: 89923
+  cycle_length: 418, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 6, times: 1
+num: 104022
+  cycle_length: 420, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 4, times: 1
+num: 90923
+  cycle_length: 421, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 3, times: 1
+num: 89895
+  cycle_length: 422, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 2, times: 1
+num: 102664
+  cycle_length: 423, times: 1
+  cycle_length: 168, times: 57
+  cycle_length: 1, times: 1
+num: 104040
+  cycle_length: 424, times: 1
+  cycle_length: 168, times: 57
+num: 90843
+  cycle_length: 425, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 167, times: 1
+num: 89880
+  cycle_length: 426, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 166, times: 1
+num: 102718
+  cycle_length: 427, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 165, times: 1
+num: 104051
+  cycle_length: 428, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 164, times: 1
+num: 89866
+  cycle_length: 430, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 162, times: 1
+num: 102755
+  cycle_length: 431, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 161, times: 1
+num: 104060
+  cycle_length: 432, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 160, times: 1
+num: 90756
+  cycle_length: 433, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 159, times: 1
+num: 89865
+  cycle_length: 434, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 158, times: 1
+num: 102812
+  cycle_length: 435, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 157, times: 1
+num: 104053
+  cycle_length: 436, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 156, times: 1
+num: 90722
+  cycle_length: 437, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 155, times: 1
+num: 89872
+  cycle_length: 438, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 154, times: 1
+num: 102849
+  cycle_length: 439, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 153, times: 1
+num: 104047
+  cycle_length: 440, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 152, times: 1
+num: 90683
+  cycle_length: 441, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 151, times: 1
+num: 89896
+  cycle_length: 442, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 150, times: 1
+num: 102893
+  cycle_length: 443, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 149, times: 1
+num: 104017
+  cycle_length: 444, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 148, times: 1
+num: 90651
+  cycle_length: 445, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 147, times: 1
+num: 89936
+  cycle_length: 446, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 146, times: 1
+num: 102923
+  cycle_length: 447, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 145, times: 1
+num: 103974
+  cycle_length: 448, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 144, times: 1
+num: 90636
+  cycle_length: 449, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 143, times: 1
+num: 89977
+  cycle_length: 450, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 142, times: 1
+num: 102956
+  cycle_length: 451, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 141, times: 1
+num: 103929
+  cycle_length: 452, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 140, times: 1
+num: 90605
+  cycle_length: 453, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 139, times: 1
+num: 90030
+  cycle_length: 454, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 138, times: 1
+num: 102989
+  cycle_length: 455, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 137, times: 1
+num: 103873
+  cycle_length: 456, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 136, times: 1
+num: 90585
+  cycle_length: 457, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 135, times: 1
+num: 90087
+  cycle_length: 458, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 134, times: 1
+num: 103003
+  cycle_length: 459, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 133, times: 1
+num: 103819
+  cycle_length: 460, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 132, times: 1
+num: 90582
+  cycle_length: 461, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 131, times: 1
+num: 102998
+  cycle_length: 463, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 129, times: 1
+num: 103758
+  cycle_length: 464, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 128, times: 1
+num: 90592
+  cycle_length: 465, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 127, times: 1
+num: 90208
+  cycle_length: 466, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 126, times: 1
+num: 102979
+  cycle_length: 467, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 125, times: 1
+num: 103698
+  cycle_length: 468, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 124, times: 1
+num: 90610
+  cycle_length: 469, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 123, times: 1
+num: 90248
+  cycle_length: 470, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 122, times: 1
+num: 102943
+  cycle_length: 471, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 121, times: 1
+num: 103659
+  cycle_length: 472, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 120, times: 1
+num: 90645
+  cycle_length: 473, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 119, times: 1
+num: 90283
+  cycle_length: 474, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 118, times: 1
+num: 102905
+  cycle_length: 475, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 117, times: 1
+num: 103621
+  cycle_length: 476, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 116, times: 1
+num: 90690
+  cycle_length: 477, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 115, times: 1
+num: 90321
+  cycle_length: 478, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 114, times: 1
+num: 102859
+  cycle_length: 479, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 113, times: 1
+num: 103568
+  cycle_length: 480, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 112, times: 1
+num: 90737
+  cycle_length: 481, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 111, times: 1
+num: 90375
+  cycle_length: 482, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 110, times: 1
+num: 102810
+  cycle_length: 483, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 109, times: 1
+num: 103515
+  cycle_length: 484, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 108, times: 1
+num: 90791
+  cycle_length: 485, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 107, times: 1
+num: 90430
+  cycle_length: 486, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 106, times: 1
+num: 102775
+  cycle_length: 487, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 105, times: 1
+num: 103471
+  cycle_length: 488, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 104, times: 1
+num: 90826
+  cycle_length: 489, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 103, times: 1
+num: 90481
+  cycle_length: 490, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 102, times: 1
+num: 102747
+  cycle_length: 491, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 101, times: 1
+num: 103420
+  cycle_length: 492, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 100, times: 1
+num: 90849
+  cycle_length: 493, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 99, times: 1
+num: 90534
+  cycle_length: 494, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 98, times: 1
+num: 102726
+  cycle_length: 495, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 97, times: 1
+num: 103365
+  cycle_length: 496, times: 1
+  cycle_length: 168, times: 56
+  cycle_length: 96, times: 1
+101998 96893 92617 96258 100901 96965 92625 96283 100975 97128 92608 96302 100936 97008 92657 96599 101009 96725 92580 96903
+101145 96473 92602 97115 101160 96296 92569 97339 101255 96143 92469 97474 101370 96057 92366 97591 101462 95951 92274 97676
+101573 95849 92220 97789 101653 95718 92157 97923 101730 95588 92056 98005 101771 95505 92027 98098 101867 95448 91938 98170
+101938 95333 91864 98303 102034 95214 91742 98407 102156 95117 91652 98497 102245 95020 91586 98549 102320 94940 91479 98634
+102432 94843 91381 98720 102488 94782 91362 98787 102479 94738 91388 98845 102487 94696 91385 98886 102527 94635 91333 98948
+102508 94568 91344 99035 102522 94483 91300 99104 102588 94404 91284 99181 102601 94353 91269 99194 102599 94332 91252 99247
+102648 94279 91230 99311 102656 94241 91219 99361 102703 94168 91164 99432 102736 94087 91131 99514 102782 93985 91082 99599
+102832 93897 91021 99669 102909 93834 90916 99733 102994 93748 90838 99833 103075 93640 90749 99939 103170 93530 90660 100060
+103285 93424 90541 100179 103382 93308 90452 100287 103465 93186 90374 100408 103566 93062 90270 100535 103660 92938 90184 100643
+103720 92821 90131 100751 103774 92700 90096 100864 103832 92589 90053 100977 103888 92475 90002 101103 103920 92347 89976 101236
+103951 92211 89942 101379 104000 92083 89893 101513 104071 91961 89820 101647 104125 91813 89772 101793 104157 91660 89744 101940
+104193 91533 89719 102044 104224 91456 89685 102129 104240 91360 89687 102231 104232 91259 89704 102330 104228 91179 89710 102421
+104210 91079 89728 102516 104191 90996 89737 102594 104189 90917 89728 102655 104188 90856 89729 102717 104187 90793 89738 102772
+104184 90744 89739 102813 104178 90704 89763 102867 104147 90667 89797 102904 104119 90630 89839 102949 104071 90596 89881 102981
+104026 90580 89928 103007 103980 90561 89986 103027 103922 90554 90042 103030 103874 90554 90081 103005 103831 90584 90123 102964
+103777 90620 90172 102917 103720 90660 90227 102879 103663 90706 90284 102845 103604 90748 90351 102803 103541 90796 90419 102780
+103475 90822 90478 102760 103414 90840 90538 102727 103356 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664
+104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893
+104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998
+103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810
+103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660
+103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417
+103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310
+103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282
+103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523
+103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812
+104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989
+103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905
+103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726
+103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522
+103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324
+103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279
+103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397
+103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718
+104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923
+103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979
+103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775
+103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625
+103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369
+103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303
+103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301
+103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588
+104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755 104060 90756 89865 102812 104053 90722 89872 102849
+104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956 103929 90605 90030 102989 103873 90585 90087 103003
+103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943 103659 90645 90283 102905 103621 90690 90321 102859
+103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747 103420 90849 90534 102726 103365 90874 90588 102696
+103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574 103224 91028 90708 102522 103206 91076 90714 102471
+103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338 103244 91243 90668 102324 103260 91256 90656 102329
+103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291 103430 91271 90455 102279 103505 91262 90382 102281
+103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341 103815 91175 90067 102397 103896 91126 89999 102455
+103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664 104040 90843 89880 102718 104051 90793 89866 102755
+104060 90756 89865 102812 104053 90722 89872 102849 104047 90683 89896 102893 104017 90651 89936 102923 103974 90636 89977 102956
+103929 90605 90030 102989 103873 90585 90087 103003 103819 90582 90146 102998 103758 90592 90208 102979 103698 90610 90248 102943
+103659 90645 90283 102905 103621 90690 90321 102859 103568 90737 90375 102810 103515 90791 90430 102775 103471 90826 90481 102747
+103420 90849 90534 102726 103365 90874 90588 102696 103308 90909 90635 102660 103267 90940 90661 102625 103243 90980 90685 102574
+103224 91028 90708 102522 103206 91076 90714 102471 103198 91117 90703 102417 103214 91167 90686 102369 103235 91214 90681 102338
+103244 91243 90668 102324 103260 91256 90656 102329 103284 91262 90624 102310 103326 91260 90583 102303 103364 91265 90523 102291
+103430 91271 90455 102279 103505 91262 90382 102281 103581 91261 90299 102282 103662 91246 90225 102301 103735 91222 90146 102341
+103815 91175 90067 102397 103896 91126 89999 102455 103962 91069 89956 102523 103995 90996 89923 102588 104022 90923 89895 102664

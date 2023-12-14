@@ -19,8 +19,11 @@ lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true).map { |line| l
 rotated_path = "#{FILE_PATH.basename('.*')}_rotated_log.txt"
 rotated_file = File.open(rotated_path, 'w+')
 
+$rotate_map = {}
 # rotates the matrix clockwise
 def rotate(matrix)
+  return $rotate_map[matrix] if $rotate_map[matrix]
+
   rotated = []
   (0...matrix[0].length).each do |x|
     row = []
@@ -29,6 +32,7 @@ def rotate(matrix)
     end
     rotated << row
   end
+  $rotate_map[matrix] = rotated
   rotated
 end
 
@@ -77,18 +81,51 @@ def weird_join(arr)
   arr.map { |str| str.empty? ? '#' : str }.join
 end
 
+$tilt_map = {}
 def tilt_matrix(matrix)
-  matrix.map do |row|
+  return $tilt_map[matrix] if $tilt_map[matrix]
+
+  tilted = matrix.map do |row|
     weird_join(weird_split(row.join('')).map { |group| tilt(group) }).split('')
   end
+  $tilt_map[matrix] = tilted
+  tilted
 end
 
-def spin_cycle(matrix, times)
-  times.times do
-    4.times do
-      matrix = tilt_matrix(matrix)
-      matrix = rotate(matrix)
+$cycle_hash = {}
+def spin_cycle(matrix)
+  return $cycle_hash[matrix] if $cycle_hash[matrix]
+  i = 0
+  while i < 4
+    tmp = tilt_matrix(matrix)
+    tmp = rotate(tmp)
+    i += 1
+  end
+
+  $cycle_hash[matrix] = tmp
+  tmp
+end
+
+def checksum(matrix)
+  checksum = 0
+  matrix.each do |row|
+    row.each_with_index do |char, index|
+      checksum += index + 1 if char == 'O'
     end
+  end
+  checksum
+end
+
+def run_cycles(matrix, times)
+  dict = {}
+  cycle_log = []
+  times.times do
+    # return cycle_log if dict[matrix]
+
+    tmp = spin_cycle(matrix)
+    dict[matrix] = tmp
+    cycle_log << checksum(tmp)
+    matrix = tmp
   end
   matrix
 end
@@ -101,18 +138,26 @@ def log_spin(matrix, file)
 end
 
 
-spin_path = "#{FILE_PATH.basename('.*')}_spin_log.txt"
-spin_file = File.open(spin_path, 'w+')
+# spin_path = "#{FILE_PATH.basename('.*')}_spin_log.txt"
+# spin_file = File.open(spin_path, 'w+')
 
 
 tilted = tilt_matrix(rotated)
-binding.pry
-spun = spin_cycle(rotated, 1_000_000_000)
-log_spin(spun, spin_file)
-binding.pry
+# binding.pry
+log = run_cycles(rotated, 1_000)
 checksum = 0
 
+# log.uniq.each do |num|
+#   spin_file.puts "num: #{num}"
+#   lengths = log.slice_before(num).map(&:length)
+#   lengths.uniq.each do |entry|
+#     spin_file.puts "  cycle_length: #{entry}, times: #{lengths.count(entry)}"
+#   end
+# end
 
+# log.each_slice(20).each {|slice| spin_file.puts slice.join(' ')}
+# spin_file.flush
+# binding.pry
 
 spun.each do |row|
   row.each_with_index do |char, index|
@@ -120,6 +165,8 @@ spun.each do |row|
   end
 end
 
+# spin_file.puts checksum
 puts checksum
 
+log_spin(spun, spin_file)
 # expects 105208
