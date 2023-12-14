@@ -7,7 +7,7 @@ require 'pry-nav'
 FileExists = Class.new(StandardError)
 
 arg = ARGV.shift
-raise ArgumentError, 'Expects ruby init.rb <dirnum>' if arg.nil?
+raise ArgumentError, 'Expects aoc-init <dirnum>' if arg.nil?
 
 dirname = arg.rjust(2, '0')
 
