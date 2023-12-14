@@ -36,15 +36,13 @@ end
 # problem has changed. We are now tilting EAST aka RIGHT
 # It's easier for me to think in rows instead of columns
 
-# rotated = rotate(lines)
 rotated = MatrixRotate.clockwise(lines)
 rotated.each { |row| rotated_file.puts row.join('') }
 rotated_file.flush
 
-# rotated.map! { |row| row.join('') }
-
 def tilt_group(str)
   return str if str.empty?
+
   count = 0
   (0...str.length).each do |i|
     count += 1 if str[i] == 'O'
@@ -92,8 +90,8 @@ def tilt_matrix(matrix)
     tilted_row = weird_join(tilted_groups)
     raise StandardError if row.length != tilted_row.length
 
-    tilted_row
-  end.map { |row| row.split('') }
+    tilted_row.split('')
+  end
 end
 
 def checksum(matrix)
@@ -107,22 +105,18 @@ def checksum(matrix)
 end
 
 def spin_cycle(matrix)
-  tmp = matrix
   4.times do
-    tmp = tilt_matrix(tmp)
-    tmp = MatrixRotate.clockwise(tmp)
+    matrix = tilt_matrix(matrix)
+    matrix = MatrixRotate.clockwise(matrix)
   end
-  tmp
+  matrix
 end
 
-$spin_dict = {}
 def multi_spin(matrix, count = 1)
-  tmp = matrix
-  count.times do |i|
-    $spin_dict[tmp] = spin_cycle(tmp)
-    tmp = $spin_dict[tmp]
+  count.times do
+    matrix = spin_cycle(matrix)
   end
-  tmp
+  matrix
 end
 
 Cycle = Struct.new(:matrix, :index, :cycle_length)
