@@ -2,6 +2,7 @@
 
 require 'pathname'
 require 'pry-nav'
+require '../rotate_matrix'
 
 arg = ARGV.shift
 
@@ -19,11 +20,8 @@ lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true).map { |line| l
 rotated_path = "#{FILE_PATH.basename('.*')}_rotated_log.txt"
 rotated_file = File.open(rotated_path, 'w+')
 
-$rotate_map = {}
-# rotates the matrix clockwise
+# Rotates the matrix clockwise
 def rotate(matrix)
-  return $rotate_map[matrix] if $rotate_map[matrix]
-
   rotated = []
   (0...matrix[0].length).each do |x|
     row = []
@@ -32,18 +30,21 @@ def rotate(matrix)
     end
     rotated << row
   end
-  $rotate_map[matrix] = rotated
   rotated
 end
 
 # problem has changed. We are now tilting EAST aka RIGHT
-rotated = rotate(lines)
+# It's easier for me to think in rows instead of columns
+
+# rotated = rotate(lines)
+rotated = MatrixRotate.clockwise(lines)
 rotated.each { |row| rotated_file.puts row.join('') }
 rotated_file.flush
 
-def tilt(str) # rubocop:disable Metrics/MethodLength
-  return str if str.empty?
+# rotated.map! { |row| row.join('') }
 
+def tilt_group(str)
+  return str if str.empty?
   count = 0
   (0...str.length).each do |i|
     count += 1 if str[i] == 'O'
@@ -60,7 +61,9 @@ def tilt(str) # rubocop:disable Metrics/MethodLength
   str
 end
 
-def weird_split(str) # rubocop:disable Metrics/MethodLength
+# splits the string into substrings separated by '#'.
+# Each '#' becomes an empty string element in the subsequent array
+def weird_split(str)
   res = []
   sub_str = ''
   str.each_char do |char|
@@ -77,33 +80,20 @@ def weird_split(str) # rubocop:disable Metrics/MethodLength
   res
 end
 
+# Joins my weird hacky split format back together
 def weird_join(arr)
   arr.map { |str| str.empty? ? '#' : str }.join
 end
 
-$tilt_map = {}
 def tilt_matrix(matrix)
-  return $tilt_map[matrix] if $tilt_map[matrix]
+  matrix.map(&:join).map do |row|
+    groups = weird_split(row)
+    tilted_groups = groups.map { |group| tilt_group(group) }
+    tilted_row = weird_join(tilted_groups)
+    raise StandardError if row.length != tilted_row.length
 
-  tilted = matrix.map do |row|
-    weird_join(weird_split(row.join('')).map { |group| tilt(group) }).split('')
-  end
-  $tilt_map[matrix] = tilted
-  tilted
-end
-
-$cycle_hash = {}
-def spin_cycle(matrix)
-  return $cycle_hash[matrix] if $cycle_hash[matrix]
-  i = 0
-  while i < 4
-    tmp = tilt_matrix(matrix)
-    tmp = rotate(tmp)
-    i += 1
-  end
-
-  $cycle_hash[matrix] = tmp
-  tmp
+    tilted_row
+  end.map { |row| row.split('') }
 end
 
 def checksum(matrix)
@@ -116,57 +106,30 @@ def checksum(matrix)
   checksum
 end
 
-def run_cycles(matrix, times)
-  dict = {}
-  cycle_log = []
-  times.times do
-    # return cycle_log if dict[matrix]
+def spin_cycle(matrix)
 
-    tmp = spin_cycle(matrix)
-    dict[matrix] = tmp
-    cycle_log << checksum(tmp)
-    matrix = tmp
-  end
-  matrix
+  # MatrixRotate.clockwise(tilt_matrix(
+  #                          MatrixRotate.clockwise(tilt_matrix(
+  #                                                   MatrixRotate.clockwise(tilt_matrix(
+  #                                                                            MatrixRotate.clockwise(tilt_matrix(matrix))))))))
 end
 
-def log_spin(matrix, file)
+$spin_dict = {}
+def mult_spin(matrix, count)
   tmp = matrix
-  3.times { tmp = rotate(tmp) }
-  tmp.each { |row| file.puts row.join('') }
-  file.flush
+  count.times do
+    $spin_dict[tmp] = spin_cycle(tmp)
+    tmp = $spin_dict[tmp]
+  end
+  tmp
 end
-
-
-# spin_path = "#{FILE_PATH.basename('.*')}_spin_log.txt"
-# spin_file = File.open(spin_path, 'w+')
-
 
 tilted = tilt_matrix(rotated)
 # binding.pry
-log = run_cycles(rotated, 1_000)
-checksum = 0
+# spun = mult_spin(rotated)
 
-# log.uniq.each do |num|
-#   spin_file.puts "num: #{num}"
-#   lengths = log.slice_before(num).map(&:length)
-#   lengths.uniq.each do |entry|
-#     spin_file.puts "  cycle_length: #{entry}, times: #{lengths.count(entry)}"
-#   end
-# end
+checksum = checksum(tilted)
 
-# log.each_slice(20).each {|slice| spin_file.puts slice.join(' ')}
-# spin_file.flush
-# binding.pry
-
-spun.each do |row|
-  row.each_with_index do |char, index|
-    checksum += index + 1 if char == 'O'
-  end
-end
-
-# spin_file.puts checksum
 puts checksum
 
-log_spin(spun, spin_file)
 # expects 105208
