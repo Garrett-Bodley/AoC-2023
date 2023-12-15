@@ -70,7 +70,7 @@ checksum = 0
 puzzles.each do |puzzle|
   first = find_symmetry(puzzle)
 
-  if first >= 0
+  if first != -1
     checksum += first + 1
     next
   end
