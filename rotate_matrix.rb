@@ -41,8 +41,8 @@ module MatrixRotate
     matrix
   end
 
-  def self.log(matrix)
-    matrix.each { |row| puts row.join(' ') }
+  def self.log(matrix, separator = '')
+    matrix.each { |row| puts row.join(separator) }
   end
 
   def self.rotate_and_log(matrix, dir, times = 1)
