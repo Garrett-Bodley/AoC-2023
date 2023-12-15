@@ -22,7 +22,6 @@ lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true)
 puzzles = lines.slice_before('').map { |chunk| chunk.reject(&:empty?) }.reject(&:empty?)
                .map { |puzzle| puzzle.map { |line| line.split('') } }
 
-
 # rotates matrix counter clockwise
 def rotate(matrix)
   rotated = []
@@ -36,48 +35,35 @@ def rotate(matrix)
   rotated
 end
 
-# checks if a matrix is symmetric given an index
-def symmetric?(left, matrix) # rubocop:disable Metrics/MethodLength
+# Checks if a matrix has an off-by-one symmetry
+def smudge_symmetric?(left, matrix) # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
   l = left
   r = left + 1
 
   lsize = l + 1
   rsize = matrix[0].length - lsize
   reflection_size = [lsize, rsize].min * 2
-
+  diff_count = 0
   width = 0
   while width < reflection_size
     matrix.each do |row|
-      return false if row[l] != row[r]
+      if row[l] != row[r]
+        return false if diff_count != 0
+
+        diff_count += 1
+      end
     end
     l -= 1
     r += 1
     width += 2
   end
-  true
+  diff_count == 1
 end
 
-# finds the left index of the matrix's symmetry or returns -1
+# Finds the left index of the matrix's symmetry or returns -1
 def find_symmetry(matrix)
   (0...matrix[0].length - 1).each do |start|
-    return start if symmetric?(start, matrix)
-  end
-  -1
-end
-
-def flip_char(x, y, matrix)
-  flipped = matrix[y][x] == '.' ? '#' : '.'
-  matrix[y][x] = flipped
-end
-
-def find_smudge(matrix, invalid)
-  matrix.each_with_index do |row, y|
-    row.each_with_index do |_char, x|
-      copy = matrix.map(&:dup)
-      flip_char(x, y, copy)
-      is_sym = find_symmetry(copy)
-      return is_sym unless is_sym == -1 || is_sym == invalid
-    end
+    return start if smudge_symmetric?(start, matrix)
   end
   -1
 end
@@ -85,19 +71,17 @@ end
 checksum = 0
 
 puzzles.each do |puzzle|
-  invalid = find_symmetry(puzzle)
-  first = find_smudge(puzzle, invalid)
+  first = find_symmetry(puzzle)
   if first != -1
     checksum += first + 1
     next
   end
 
-  rotated = rotate(puzzle)
-  invalid = find_symmetry(rotated)
-  second = find_smudge(rotated, invalid)
+  second = find_symmetry(rotate(puzzle))
   checksum += (second + 1) * 100
+  binding.pry if first == -1 && second == -1
 end
 
 puts checksum
 
-# 20311 too low!
+# expects 30844
