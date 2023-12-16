@@ -66,7 +66,7 @@ class LightPuzzle
       cur = coords.shift
       @path.add(cur)
       next_coords = next_coords(cur).compact
-      filtered = next_coords.reject { |coord| path.cycle?(coord) }
+      filtered = next_coords.reject { |coord| @path.cycle?(coord) }
       coords += filtered
     end
     puts @path.dict.length
