@@ -52,7 +52,6 @@ class LightPuzzle
 
   Coord = Struct.new(:x, :y, :dir, :char)
   InvalidChar = Class.new(StandardError)
-  InvalidDir = Class.new(StandardError)
   def initialize(matrix)
     @matrix = matrix
     @height = matrix.length
@@ -65,8 +64,8 @@ class LightPuzzle
     until coords.empty?
       cur = coords.shift
       @path.add(cur)
-      next_coords = next_coords(cur).compact
-      filtered = next_coords.reject { |coord| path.cycle?(coord) }
+      next_coords = next_coords(cur)
+      filtered = next_coords.reject { |coord| @path.cycle?(coord) }
       coords += filtered
     end
     @path.dict.length
@@ -134,14 +133,14 @@ class LightPuzzle
     raise InvalidChar unless coord.char.match?('|')
     return stay_course(coord) unless coord.dir.match?(/E|W/)
 
-    [north(coord), south(coord)].compact
+    [north(coord), south(coord)]
   end
 
   def split_horiz(coord)
     raise InvalidChar unless coord.char.match?('-')
     return stay_course(coord) unless coord.dir.match?(/N|S/)
 
-    [east(coord), west(coord)].compact
+    [east(coord), west(coord)]
   end
 
   def slash(coord)
