@@ -50,7 +50,7 @@ class LensMap
 
   def initialize(data)
     @buckets = Array.new(256).map{ [] }
-    @lfsr = LinearHash.new
+    @lh = LinearHash.new
     data.each do |str|
       process(str)
     end
@@ -65,7 +65,7 @@ class LensMap
   end
 
   def insert(str)
-    key = @lfsr.hash_str(str.split('=').first)
+    key = @lh.hash_str(str.split('=').first)
     lens_data = str.split('=')
     match = @buckets[key].find_index { |el| el.match?(lens_data[0]) }
     if match
@@ -76,7 +76,7 @@ class LensMap
   end
 
   def remove(str)
-    key = @lfsr.hash_str(str.split('-').first)
+    key = @lh.hash_str(str.split('-').first)
     str.sub!('-', '')
     @buckets[key].reject! do |el|
       el.match?(str)
