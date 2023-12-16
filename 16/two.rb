@@ -69,7 +69,39 @@ class LightPuzzle
       filtered = next_coords.reject { |coord| path.cycle?(coord) }
       coords += filtered
     end
-    puts @path.dict.length
+    @path.dict.length
+  end
+
+  def find_best
+    top = traverse_top_row
+    bottom = traverse_bottom_row
+    left = traverse_left_col
+    right = traverse_right_col
+    [top, bottom, left, right].flatten.max
+  end
+
+  def traverse_top_row
+    (0...@width).map do |x|
+      traverse(x, 0, 'S')
+    end
+  end
+
+  def traverse_bottom_row
+    (0...@width).map do |x|
+      traverse(x, @height - 1, 'N')
+    end
+  end
+
+  def traverse_left_col
+    (0...@height).map do |y|
+      traverse(0, y, 'E')
+    end
+  end
+
+  def traverse_right_col
+    (0...@height).map do |y|
+      traverse(@width - 1, y, 'W')
+    end
   end
 
   def next_coords(coord)
@@ -181,6 +213,6 @@ class LightPuzzle
 end
 
 lp = LightPuzzle.new(matrix)
-lp.traverse(0, 0, 'E')
+puts lp.find_best
 
-# expects 6740
+# expects 7041
