@@ -48,10 +48,14 @@ class Solver
         move_right(count)
       end
     end
-    MatrixRotate.log(@matrix)
-    puts
+    # MatrixRotate.log(@matrix)
+    # puts
+    # # test flood_fill:
+    # flood_fill(1, 1)
+
+    # input flood_fill:
     flood_fill(106, 4)
-    MatrixRotate.log(@matrix)
+    # MatrixRotate.log(@matrix)
     @matrix.reduce(0) do |sum, row|
       sum + row.filter { |char| char == '#' }.length
     end
@@ -186,3 +190,5 @@ end
 
 s = Solver.new(lines)
 puts s.solve
+
+# expects 42317
