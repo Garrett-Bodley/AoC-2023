@@ -51,17 +51,9 @@ class PathFind
           nil
         end
       end.compact
-      # filtered.each do |coord|
-      #   set_weight(coord, cur)
-      # end
-      # binding.pry
-      # filtered.each do |to_insert|
-      #   priority_insert(coords, to_insert)
-      # end
       coords += filtered
       coords.sort! { |a, b| a.weight <=> b.weight }
       puts coords.length
-      # binding.pry
     end
   end
 
@@ -121,6 +113,8 @@ class PathFind
     end
   end
 
+  # I ended up not even using this bc ruby is annoying about mutating objects in functions
+  # Todo: write a binary search thing bc ruby doesn't have a priority queue
   def priority_insert(coords, to_insert)
     # linear search for node insertion
     # could definitely be sped up by using binary search but i am lazy
