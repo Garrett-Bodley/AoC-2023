@@ -18,12 +18,13 @@ filters, parts = File.open(FILE_PATH, File::RDONLY).read.split("\n\n").map{ |chu
 
 # Handles logic for filtering parts
 class Filter
-  attr_accessor :name, :chunks, :rules, :string
+  attr_accessor :name, :rules, :string
 
   @@all = []
   @@lookup = {}
   @@accepted = []
   @@rejected = []
+
   def initialize(string)
     @string = string
     parse_filter_string
@@ -48,7 +49,7 @@ class Filter
     end
   end
 
-  def judge(part)
+  def judge(part) # rubocop:disable Metrics/MethodLength
     @rules.each do |rule|
       if rule.length == 1
         dest = rule[0]
