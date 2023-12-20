@@ -33,18 +33,18 @@ class PathFind
   end
 
   def find_path
-    coords = [Coord.new(0, 0, 'S', 0, nil, 0)]
+    coords = [Coord.new(0, 0, '*', 0, nil, 0)]
     until coords.empty?
       cur = coords.shift
       # binding.pry
       if cur.x == @width - 1 && cur.y == @height - 1
         trace(cur)
+        binding.pry
         return cur.weight
       end
 
       next_coords = get_next(cur)
       filtered = next_coords.map do |coord|
-        coord.weight = calc_weight(coord, cur)
         if @memo[coord.to_s].nil? || coord.weight < @memo[coord.to_s].weight
           @memo[coord.to_s] = coord
         else # rubocop:disable Style/EmptyElse
@@ -75,6 +75,8 @@ class PathFind
       [east(coord), north(coord), south(coord)].compact
     when 'W'
       [west(coord), north(coord), south(coord)].compact
+    when '*'
+      [north(coord), south(coord), east(coord), west(coord)].compact
     end
   end
 
@@ -90,12 +92,18 @@ class PathFind
     if prev.dir != 'N'
       new_y = prev.y - 4
       return nil if new_y < 0 # rubocop:disable Style/NumericPredicate
+
+      new_weight = prev.weight
+      (1...5).each do |offset|
+        new_weight += matrix[prev.y - offset][prev.x]
+      end
     else
       new_y = prev.y - 1
+      new_weight = prev.weight + matrix[new_y][prev.x]
     end
 
     dir_count = eval_dir_count('N', prev)
-    Coord.new(prev.x, new_y, 'N', dir_count, prev)
+    Coord.new(prev.x, new_y, 'N', dir_count, prev, new_weight)
   end
 
   def south(prev)
@@ -106,12 +114,18 @@ class PathFind
     if prev.dir != 'S'
       new_y = prev.y + 4
       return nil if new_y > @height - 1
+
+      new_weight = prev.weight
+      (1...5).each do |offset|
+        new_weight += matrix[prev.y + offset][prev.x]
+      end
     else
       new_y = prev.y + 1
+      new_weight = matrix[new_y][prev.x]
     end
 
     dir_count = eval_dir_count('S', prev)
-    Coord.new(prev.x, new_y, 'S', dir_count, prev)
+    Coord.new(prev.x, new_y, 'S', dir_count, prev, new_weight)
   end
 
   def east(prev)
@@ -122,12 +136,18 @@ class PathFind
     if prev.dir != 'E'
       new_x = prev.x + 4
       return nil if new_x > @width - 1
+
+      new_weight = prev.weight
+      (1...5).each do |offset|
+        new_weight += matrix[prev.y][prev.x + offset]
+      end
     else
       new_x = prev.x + 1
+      new_weight = prev.weight + matrix[prev.y][new_x]
     end
 
     dir_count = eval_dir_count('E', prev)
-    Coord.new(new_x, prev.y, 'E', dir_count, prev)
+    Coord.new(new_x, prev.y, 'E', dir_count, prev, new_weight)
   end
 
   def west(prev)
@@ -138,12 +158,18 @@ class PathFind
     if prev.dir != 'W'
       new_x = prev.x - 4
       return nil if new_x < 0
+
+      new_weight = prev.weight
+      (1...5).each do |offset|
+        new_weight += matrix[prev.y][prev.x - offset]
+      end
     else
       new_x = prev.x - 1
+      new_weight = prev.weight + matrix[prev.y][new_x]
     end
 
     dir_count = eval_dir_count('W', prev)
-    Coord.new(new_x, prev.y, 'W', dir_count, prev)
+    Coord.new(new_x, prev.y, 'W', dir_count, prev, new_weight)
   end
 
   def eval_dir_count(dir, prev)
