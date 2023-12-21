@@ -19,7 +19,6 @@ matrix = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true).map { |line| 
 
 # Solves Day 21
 class Solver
-
   Coord = Struct.new(*%i[x y steps]) do
     def to_s
       "#{x},#{y}"
@@ -33,23 +32,28 @@ class Solver
     bfs
   end
 
+  def solve
+    bfs
+  end
+
   def bfs
     @visited = {}
-    q = [@start]
+    q = Queue.new
+    q << @start
     until q.empty?
       cur = q.shift
       next if cur.steps > @step_count
+      next if @visited[cur.to_s]
 
       @visited[cur.to_s] = cur
       neighbors = get_neighbors(cur)
-      # filtered = neighbors.filter do |neighbor|
-      #   @visited[neighbor.to_s].nil? ? true : @visited[neighbor.to_s].steps > neighbor.steps
-      # end
-      # binding.pry if filtered.any? {|el| el.class == Array }
-      q += neighbors
+      neighbors.each { |coord| q << coord }
     end
-    @visited.values.filter { |coord| coord.steps == @step_count }.each { |coord| puts coord }
-    puts @visited.values.filter { |coord| coord.steps == @step_count }.count
+
+    plots = @visited.values.filter do |coord|
+      (@step_count - coord.steps).even?
+    end
+    plots.length
   end
 
   def get_neighbors(prev)
@@ -59,7 +63,7 @@ class Solver
   def north(prev)
     new_y = prev.y - 1
     return nil if new_y < 0
-    return nil unless @matrix[prev.x][new_y].match?(/\.|S/)
+    return nil unless @matrix[new_y][prev.x].match?(/\.|S/)
 
     Coord.new(prev.x, new_y, prev.steps + 1)
   end
@@ -67,7 +71,7 @@ class Solver
   def south(prev)
     new_y = prev.y + 1
     return nil if new_y >= @matrix.length
-    return nil unless @matrix[prev.x][new_y].match?(/\.|S/)
+    return nil unless @matrix[new_y][prev.x].match?(/\.|S/)
 
     Coord.new(prev.x, new_y, prev.steps + 1)
   end
@@ -75,7 +79,7 @@ class Solver
   def east(prev)
     new_x = prev.x + 1
     return nil if new_x >= @matrix[0].length
-    return nil unless @matrix[new_x][prev.y].match?(/\.|S/)
+    return nil unless @matrix[prev.y][new_x].match?(/\.|S/)
 
     Coord.new(new_x, prev.y, prev.steps + 1)
   end
@@ -83,7 +87,7 @@ class Solver
   def west(prev)
     new_x = prev.x - 1
     return nil if new_x < 0
-    return nil unless @matrix[new_x][prev.y].match?(/\.|S/)
+    return nil unless @matrix[prev.y][new_x].match?(/\.|S/)
 
     Coord.new(new_x, prev.y, prev.steps + 1)
   end
@@ -98,4 +102,7 @@ class Solver
 
 end
 
-Solver.new(matrix, 6)
+s = Solver.new(matrix, 64)
+puts s.solve
+
+# expects 3737
