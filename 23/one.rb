@@ -19,7 +19,6 @@ lines = File.open(FILE_PATH, File::RDONLY).readlines(chomp: true)
 
 # Solves Day 23 Part 1
 class Solver
-
   Coord = Struct.new(*%i[x y steps char path]) do
     def to_s
       "#{x},#{y}"
@@ -30,6 +29,7 @@ class Solver
     @matrix = input.map{ _1.split('') }
   end
 
+  # Surprised this works?
   def dijkstra(target = Coord.new(@matrix[0].length - 2, @matrix.length - 1))
     start = Coord.new(1, 0, 0)
     start.char = @matrix[0][1]
@@ -39,8 +39,6 @@ class Solver
     visited = {}
     until heap.empty?
       cur = heap.pop
-
-      # return cur.steps if cur.x == target.x && cur.y == target.y
 
       neighbors = get_neighbors(cur)
       filtered = neighbors.map do |coord|
@@ -54,7 +52,7 @@ class Solver
     visited[target.to_s].steps
   end
 
-  def get_neighbors(coord)
+  def get_neighbors(coord) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
     case coord.char
     when '^'
       neighbors = [north(coord)].compact
@@ -109,7 +107,6 @@ class Solver
 
     Coord.new(new_x, coord.y, coord.steps + 1, char, coord.path.dup.add(coord.to_s))
   end
-
 end
 
 s = Solver.new(lines)

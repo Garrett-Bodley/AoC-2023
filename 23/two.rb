@@ -3,7 +3,6 @@
 require 'pathname'
 require 'pry-nav'
 require 'rb_heap'
-require '../rotate_matrix.rb'
 
 arg = ARGV.shift
 
@@ -72,8 +71,8 @@ class Solver
         next if char == '#'
 
         north = @matrix[y - 1][x] if y > 0
-        south = @matrix[y + 1][x] if y < @matrix.length - 1
-        east = @matrix[y][x + 1] if x < @matrix[0].length - 1
+        south = @matrix[y + 1][x] if y < @matrix.length - 2
+        east = @matrix[y][x + 1] if x < @matrix[0].length - 2
         west = @matrix[y][x - 1] if x > 0
 
         neighbors = [north, south, east, west].compact.reject { _1 == '#' }
@@ -162,30 +161,30 @@ class Solver
   end
 
   # Too slow even when if I try the trick of logging each new longest route
-  def brute_force
-    target = Coord.new(@matrix[0].length - 2, @matrix.length - 1)
-    start = Coord.new(1, 0, 0)
-    start.char = @matrix[0][1]
-    start.path = Set.new
-    stack = [start]
+  # def brute_force
+  #   target = Coord.new(@matrix[0].length - 2, @matrix.length - 1)
+  #   start = Coord.new(1, 0, 0)
+  #   start.char = @matrix[0][1]
+  #   start.path = Set.new
+  #   stack = [start]
 
-    longest = -Float::INFINITY
+  #   longest = -Float::INFINITY
 
-    until stack.empty?
-      cur = stack.pop
-      if cur.x == target.x && cur.y == target.y
-        if cur.steps > longest
-          longest = cur.steps
-          puts longest
-        end
-        next
-      end
+  #   until stack.empty?
+  #     cur = stack.pop
+  #     if cur.x == target.x && cur.y == target.y
+  #       if cur.steps > longest
+  #         longest = cur.steps
+  #         puts longest
+  #       end
+  #       next
+  #     end
 
-      neighbors = get_neighbors(cur)
-      stack += neighbors
-    end
-    longest
-  end
+  #     neighbors = get_neighbors(cur)
+  #     stack += neighbors
+  #   end
+  #   longest
+  # end
 
   def get_neighbors(coord)
     neighbors = [north(coord), south(coord), east(coord), west(coord)].compact
