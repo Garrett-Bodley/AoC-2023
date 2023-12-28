@@ -68,7 +68,6 @@ class Solver
 
   # Nand type Gate
   class Nand < Gate
-    attr_accessor :state
 
     def initialize(name, targets)
       super(name, targets)
@@ -170,23 +169,99 @@ class Solver
     end
   end
 
-  def find_vg_high_cycle
-    binding.pry
+  def find_cycle(gate_name, high, cycle_count)
+    reset_gates
     press_count = 0
-    vg_high = []
-    until vg_high.length == 1
-      push_button
+    res = []
+    loop do
       press_count += 1
-      puts press_count
-      vg_high << press_count if !@gates['vg'].state.values.all? { |input| input == true }
+      packets = [Packet.new('broadcaster', 'button', false)]
+      until packets.empty?
+        cur = packets.shift
+        res << [press_count, cur] if cur.from == gate_name && cur.high == high
+        return res if res.length == cycle_count
+        next unless @gates[cur.to]
+
+        new_packets = @gates[cur.to].receive(cur)
+        packets += new_packets
+      end
     end
-    binding.pry
+  end
+
+  def reset_gates
+    @gates.values do |gate|
+      case gate.class
+      when Nand
+        gate.state.each_key { |key| gate.state[key] = false }
+      when FlipFlop
+        gate.state = false
+      when Broadcaster
+        next
+      end
+    end
+  end
+
+  def cycle_log
+    # rx low when all bq inputs high
+
+    # bq inputs:
+    # vg, kp, gc, tx
+    vg_cycles = find_cycle('vg', true, 5)
+    kp_cycles = find_cycle('kp', true, 5)
+    gc_cycles = find_cycle('gc', true, 5)
+    tx_cycles = find_cycle('tx', true, 5)
+
+    [vg_cycles, kp_cycles, gc_cycles, tx_cycles]
   end
 
   def solve
-    @push_count.times { push_button }
-    checksum
+    cycles = cycle_log
+    periods = cycles.map { |period| period[1][0] - period[0][0] }
+    binding.pry
+
+    periods.reduce(1) { |mult, period| lcm(mult, period) }
+
+    # idk why you can ignore the lead in before the cycle
+    # vg_period = 4027
+    # vg_lead_in = 0
+
+    # kp_period = 3929
+    # kp_lead_in = 776
+
+    # gc_period = 4001
+    # gc_lead_in = 4433
+
+    # tx_period = 3769
+    # tx_lead_in = 5234
+
+    # inputs = [
+    #   [vg_period, vg_lead_in],
+    #   [kp_period, kp_lead_in],
+    #   [gc_period, gc_lead_in],
+    #   [tx_period, tx_lead_in]
+    # ]
+
+    # max_period = [vg_period, kp_period, gc_period, tx_period].max
+    # t = [vg_lead_in, kp_lead_in, gc_lead_in, tx_lead_in].max
+
+    # loop do
+    #   return t if inputs.all? { |period, lead_in| (t - lead_in) % period == 0 }
+
+    #   t += max_period
+    # end
+
   end
+
+  def gcd(a, b)
+    return a if b.zero?
+
+    gcd(b, a % b)
+  end
+
+  def lcm(a, b)
+    (a * b) / gcd(a, b)
+  end
+
 
   def checksum
     @high_count * (@packet_count - @high_count)
@@ -195,9 +270,9 @@ class Solver
 end
 
 s = Solver.new(lines, 1000)
-s.find_vg_high_cycle
+puts s.solve
 
-# expects 681194780
+# expects 238593356738827
 
 # rx low when all bq inputs high
 
