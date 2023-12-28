@@ -34,12 +34,12 @@ class PathFind
 
   def find_path
     coords = [Coord.new(0, 0, '*', 0, nil, 0)]
+    i = 1
     until coords.empty?
       cur = coords.shift
       # binding.pry
       if cur.x == @width - 1 && cur.y == @height - 1
         trace(cur)
-        binding.pry
         return cur.weight
       end
 
@@ -51,17 +51,13 @@ class PathFind
           nil
         end
       end.compact
-      # filtered.each do |coord|
-      #   set_weight(coord, cur)
-      # end
-      # binding.pry
-      # filtered.each do |to_insert|
-      #   priority_insert(coords, to_insert)
-      # end
       coords += filtered
       coords.sort! { |a, b| a.weight <=> b.weight }
       # binding.pry
+      # filtered.each { |coord| coords = priority_insert(coords, coord) }
+      # binding.pry
       puts coords.length
+      # i += 1
     end
   end
 
@@ -80,10 +76,6 @@ class PathFind
     end
   end
 
-  # Once an ultra crucible starts moving in a direction, it needs to move a minimum of four blocks in that direction before it can turn (or even before it can stop at the end). However, it will eventually start to get wobbly: an ultra crucible can move a maximum of ten consecutive blocks without turning.
-
-  # Todo:
-  #  I have to account for the weight of all the passed coordinates when moving 4 at once in the beginning :'(
   def north(prev)
     return nil if prev.y.zero?
     return nil if prev.dir == 'S'
@@ -121,7 +113,7 @@ class PathFind
       end
     else
       new_y = prev.y + 1
-      new_weight = matrix[new_y][prev.x]
+      new_weight = prev.weight + matrix[new_y][prev.x]
     end
 
     dir_count = eval_dir_count('S', prev)
@@ -190,39 +182,14 @@ class PathFind
   def priority_insert(coords, to_insert)
     # linear search for node insertion
     # could definitely be sped up by using binary search but i am lazy
-    coords.each_with_index do |coord, i|
-      if to_insert.weight <= coord.weight
-        coords.insert(i, to_insert)
-        break
-      end
-    end
-  end
+    return [to_insert] if coords.empty?
 
+    coords.each_with_index do |coord, i|
+      return coords.insert(i, to_insert) if to_insert.weight <= coord.weight
+    end
+    coords << to_insert
+  end
 end
 
 pf = PathFind.new(matrix)
-binding.pry
 puts pf.find_path
-
-# coordinates
-# keep track of weight
-# I'm not looking for shortest path necessarily?
-# But rather path with the lowest cost
-# Do I calculate all paths?
-# What if I do an iterative depth first traversal
-#   sort the stack each iteration to select for the lowest cost path
-#   that could work? but also seems expensive
-
-# Each Node must keep track of
-#   its current weight
-#   current direction
-#   direction_count
-
-# DIJKSTRA
-#
-# 1. Label each node with infinity
-# 2. All nodes are unexplored
-# 3. For each node accessible from current node
-#   a. Calculate distance to that node from current node
-#   b. If calculated distance is less than memoized distance, update distance to smaller value
-# 4. Move to the node with the lowest distance
