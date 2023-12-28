@@ -56,7 +56,9 @@ def placeable_after(line, idx)
 end
 
 def can_place?(line, pattern, line_idx, pattern_idx)
-  return false unless line[line_idx] == '?'
+  return false unless line[line_idx].match?(/#|\?/)
+
+  if line[line_idx] == '#'
 
   group_size = pattern[pattern_idx]
   surrounding_pounds = surrounding_pounds(line, line_idx)
@@ -84,6 +86,9 @@ def place(line, pattern, line_idx, pattern_idx)
 end
 
 def solve(dict, line, pattern, line_idx, pattern_idx)
+  binding.pry if line.any?('?') && pattern_idx == pattern.length
+  binding.pry if line_idx == line.length && pattern_idx != pattern.length
+  binding.pry if line_idx == 2
   return 0 if line.any?('?') && pattern_idx == pattern.length
   return 0 if line_idx == line.length && pattern_idx != pattern.length
   return 1 if line.none?('?') && pattern_idx == pattern.length
@@ -100,6 +105,7 @@ def solve(dict, line, pattern, line_idx, pattern_idx)
   unplaced[line_idx] = '.'
   placed_combos = solve(dict, placed, pattern, placed_idx, pattern_idx + 1)
   unplaced_combos = solve(dict, unplaced, pattern, line_idx + 1, pattern_idx)
+  binding.pry if placed_combos + unplaced_combos == 0
   placed_combos + unplaced_combos
 end
 
