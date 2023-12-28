@@ -2,6 +2,7 @@
 
 require 'pathname'
 require 'pry-nav'
+require 'rb_heap'
 
 arg = ARGV.shift
 
@@ -33,10 +34,10 @@ class PathFind
   end
 
   def find_path
-    coords = [Coord.new(0, 0, '*', 0, nil, 0)]
-    i = 1
-    until coords.empty?
-      cur = coords.shift
+    q = Heap.new { |a, b| a.weight < b.weight }
+    q.add(Coord.new(0, 0, '*', 0, nil, 0))
+    until q.empty?
+      cur = q.pop
       # binding.pry
       if cur.x == @width - 1 && cur.y == @height - 1
         trace(cur)
@@ -51,13 +52,8 @@ class PathFind
           nil
         end
       end.compact
-      coords += filtered
-      coords.sort! { |a, b| a.weight <=> b.weight }
-      # binding.pry
-      # filtered.each { |coord| coords = priority_insert(coords, coord) }
-      # binding.pry
-      puts coords.length
-      # i += 1
+      filtered.each { q.add(_1) }
+      puts q.size
     end
   end
 
@@ -179,6 +175,7 @@ class PathFind
     end
   end
 
+  # didn't end up using this at all
   def priority_insert(coords, to_insert)
     # linear search for node insertion
     # could definitely be sped up by using binary search but i am lazy
